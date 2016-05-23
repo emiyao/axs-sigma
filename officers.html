@@ -57,7 +57,7 @@
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 600px;
 }
 
 /* Caption of Modal Image */
@@ -65,9 +65,10 @@
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 600px;
     text-align: center;
     color: #ccc;
+	font-size: 25px
     padding: 10px 0;
     height: 150px;
 }
@@ -92,12 +93,11 @@
 
 /* The Close Button */
 .close {
-    position: absolute;
-    top: 100px;
-    right: 200px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
+    position: relative;
+	bottom: 40px;
+    right: 100px;
+    color: #ccc;
+    font-size: 30px;
     transition: 0.3s;
 }
 
@@ -108,10 +108,10 @@
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+/* 60% Image Width on Smaller Screens */
+@media only screen and (max-width: 600px){
     .modal-content {
-        width: 100%;
+        width: 60%;
     }
 }
 </style>
@@ -139,7 +139,7 @@
                         <a href="index.html">Home</a>
                     </li>
 					<li class="dropdown">
-                        <a href="officers.html" class="dropdown-toggle" data-toggle="dropdown">Meet the brothers <i class="icon-angle-down"></i></a>
+                        <a href="officers.html" class="dropdown-toggle" data-toggle="dropdown">Meet the brothers<i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="officers.html">Officers and Chairs</a></li>
 							<li><a href="#">Pledge Classes</a></li>
@@ -167,16 +167,16 @@
                 <br><h1 class="page-header">Fall 2016 Officers and Chairs</h1>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-			<img id="myImg" src="img/group.jpg" class="img-responsive" alt="Maureen Morla | President | 4th Year">
-
+				<img id="myImg" src="img/group.jpg" class="img-responsive" alt="
+				<h3>Maureen Morla</h3> | President | 4th Year
+				">
 			<!-- The Modal -->
 			<div id="myModal" class="modal">
-				<span class="close">×</span>
+				<span class="close">close</span>
 				<img class="modal-content" id="img01">
 				<div id="caption"></div>
 			</div>
-				<center>Maureen Morla, President
-				</center>
+				<center>Maureen Morla, President</center>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
@@ -328,6 +328,16 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
     modal.style.display = "none";
 }
+
+$(function(){
+      $(document.body)
+          .on('click touchend','#swipebox-slider .current img', function(e){
+              return false;
+          })
+          .on('click touchend','#swipebox-slider .current', function(e){
+              $('#swipebox-close').trigger('click');
+          });
+    });
     </script>
 
 </body>
