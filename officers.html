@@ -20,6 +20,9 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	
+	<!-- Thick Box -->
+	<link rel="stylesheet" href="path-to-file/ThickBox.css" type="text/css" media="screen" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,7 +30,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+	
+	<script type="text/javascript" src="path-to-file/jquery.js"></script>
+	<script type="text/javascript" src="path-to-file/thickbox.js"></script>
 </head>
 
 <body>
@@ -81,33 +86,28 @@
             </div>
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <div id="pageone" data-role="main" class="ui-content">
-					<a href="myPopup" data-rel="popup" data-position-to="window">
-					<img class="img-responsive" src="img/group.jpg" alt=""></a>
-				
-				<div data-role="popup" id="myPopup">
-					<p>This is my picture!</p> 
-					<a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="img/group.jpg" style="width:800px;height:400px;" alt="">
-				</div>
-				
-				<a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                <a class="thumbnail" href="#">
+					<a href="img/group.jpg" title="Maureen Morla" class="thickbox"><img class="img-responsive" src="img/group.jpg" alt="Single Image"/></a>
                 </a>
+				<center>Maureen Morla</center>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
                     <img class="img-responsive" src="http://placehold.it/400x300" alt="">
                 </a>
+				<center>Sanum Patel</center>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
                     <img class="img-responsive" src="http://placehold.it/400x300" alt="">
                 </a>
+				<center>Nick Riasanovsky</center>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
                     <img class="img-responsive" src="http://placehold.it/400x300" alt="">
                 </a>
+				<center>Justin Wang</center>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#">
