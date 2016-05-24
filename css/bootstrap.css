@@ -6758,5 +6758,9 @@ button.close {
   }
 }
 
+.panel-footer.panel-custom {
+    background: #afb4cf;
+}
+
 
 /*# sourceMappingURL=bootstrap.css.map */
