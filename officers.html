@@ -20,6 +20,10 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	
+	<!-- Ninja Slider-->
+	<link href="css/ninja-slider.css" rel="stylesheet" type="text/css" />
+    <script src="js/ninja-slider.js" type="text/javascript"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,92 +32,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 	
-	<style>
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 600px;
-}
-
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 600px;
-    text-align: center;
-    color: #ccc;
-	font-size: 25px
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: relative;
-	bottom: 40px;
-    right: 100px;
-    color: #ccc;
-    font-size: 30px;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 60% Image Width on Smaller Screens */
-@media only screen and (max-width: 600px){
-    .modal-content {
-        width: 60%;
-    }
-}
+<style>
 </style>
 </head>
 
@@ -138,12 +57,8 @@
 					<li>
                         <a href="index.html">Home</a>
                     </li>
-					<li class="dropdown">
-                        <a href="officers.html" class="dropdown-toggle" data-toggle="dropdown">Meet the brothers<i class="icon-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="officers.html">Officers and Chairs</a></li>
-							<li><a href="#">Pledge Classes</a></li>
-                        </ul>
+					<li class="active">
+                        <a href="officers.html">Meet the brothers</a>
                     </li>
                     <li>
                         <a href="#">Rush</a>
@@ -157,88 +72,290 @@
         </div>
         <!-- /.container -->
     </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-lg-12">
-                <br><h1 class="page-header">Fall 2016 Officers and Chairs</h1>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<img id="myImg" src="img/group.jpg" class="img-responsive" alt="
-				<h3>Maureen Morla</h3> | President | 4th Year
-				">
-			<!-- The Modal -->
-			<div id="myModal" class="modal">
-				<span class="close">close</span>
-				<img class="modal-content" id="img01">
-				<div id="caption"></div>
-			</div>
-				<center>Maureen Morla, President</center>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-				<center>Sanum Patel</center>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-				<center>Nick Riasanovsky</center>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-				<center>Justin Wang</center>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
+	
+	<!-- Page Content -->
+	<div class="container">
+		<div class="col-lg-12">
+            <br><h1 class="page-header">Fall 2016 Officers and Chairs</h1>
+		</div>
+	
+	<div style="display:none;">
+        <div id="ninja-slider">
+            <div class="slider-inner">
+                <ul>
+                    <li>
+                        <a class="ns-img" href="img/a.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Maureen Morla</b>, President</h3>
+                            <p>Fall 2013 | 4th year | Chemical Engineering</p>
+							<p><a href="axs.sigma.president@gmail.com">axs.sigma.president@gmail.com</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/b.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Sanum Patel</b>, Vice President</h3>
+                            <p>Spring 2015 | 3rd year | Chemistry</p>
+							<p><a href="axs.sigma.vp@gmail.com">axs.sigma.vp@gmail.com</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/c.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Roger Chang</b>, Master of Ceremonies</h3>
+                            <p>Spring 2015 | 3rd year | Chemical Engineering</p>
+							<p><a href="axs.sigma.mc@gmail.com">axs.sigma.mc@gmail.com</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/a.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Eleanor Mudica</b>, Master of Ceremonies</h3>
+                            <p>Fall 2014 | 4th year | Molecular and Cell Biology</p>
+							<p><a href="axs.sigma.mc@gmail.com">axs.sigma.mc@gmail.com</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/nick.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Nick Riasanovksy</b>, Pledgemaster</h3>
+                            <p>Spring 2016 | 2nd year | Chemistry</p>
+							<p><a href="axs.sigma.pm@gmail.com">axs.sigma.pm@gmail.com</a></p>
+                        </div>
+                    </li>
+					<li>
+                        <a class="ns-img" href="img/justin.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Justin Wang</b>, Treasurer</h3>
+                            <p>Fall 2014 | 3rd year | Chemical Biology</p>
+							<p><a href="axs.sigma.treasurer@gmail.com">axs.sigma.treasurer@gmail.com</a></p>
+                        </div>
+                    </li>
+					<li>
+                        <a class="ns-img" href="img/rian.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Rian Kormos</b>, Investment Manager</h3>
+                            <p>Spring 2015 | 3rd year | Chemical Biology</p>
+							<p><a href="axs.sigma.investment@gmail.com">axs.sigma.investment@gmail.com</a></p>
+                        </div>
+                    </li>
+					<li>
+                        <a class="ns-img" href="img/emily.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Emily Yao</b>, Webmaster</h3>
+                            <p>Spring 2014 | 4th year | Molecular and Cell Biology, Nutritional Sciences</p>
+							<p><a href="axs.sigma.web@gmail.com">axs.sigma.web@gmail.com</a></p>
+                        </div>
+                    </li>
+					<li>
+                        <a class="ns-img" href="img/annie.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Annie Preece-Scaringe</b>, Reporter</h3>
+                            <p>Spring 2016 | 3rd year | Chemical Engineering</p>
+							<p><a href="axs.sigma.reporter@gmail.com">axs.sigma.reporter@gmail.com</a></p>
+                        </div>
+                    </li>
+					<li>
+                        <a class="ns-img" href="img/b.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Linda Xu</b>, Recorder</h3>
+                            <p>Spring 2016 | 2nd year | Chemical Biology</p>
+							<p><a href="axs.sigma.recorder@gmail.com">axs.sigma.recorder@gmail.com</a></p>
+                        </div>
+                    </li>
+					<li>
+                        <a class="ns-img" href="img/lisha.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Lisha Ou</b>, Historian</h3>
+                            <p>Spring 2016 | 2nd year | Chemical Biology</p>
+							<p><a href="axs.sigma.historian@gmail.com">axs.sigma.historian@gmail.com</a></p>
+                        </div>
+                    </li>
+					<li>
+                        <a class="ns-img" href="img/stephanie.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Stephanie Robinson</b>, Historian</h3>
+                            <p>Spring 2016 | 2nd year | Chemistry</p>
+							<p><a href="axs.sigma.recorder@gmail.com">axs.sigma.recorder@gmail.com</a></p>
+                        </div>
+                    </li>
+					<li>
+                        <a class="ns-img" href="img/katherine.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Katherine Jung</b>, Alumni Secretary</h3>
+                            <p>Fall 2015 | 2nd year | Chemical Engineering</p>
+							<p><a href="axs.sigma.alumnisec@gmail.com">axs.sigma.alumnisec@gmail.com</a></p>
+                        </div>
+                    </li>
+					<li>
+                        <a class="ns-img" href="img/c.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Sanya Seghal</b>, Social Chair</h3>
+                            <p>Fall 2015 | 3rd year | Chemical Engineering</p>
+							<p><a href="axs.sigma.social@gmail.com">axs.sigma.social@gmail.com</a></p>
+                        </div>
+                    </li>
+					<li>
+                        <a class="ns-img" href="img/a.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Virginia Garda</b>, Tutoring Chair</h3>
+                            <p>Spring 2015 | 3rd year | Chemical Biology</p>
+							<p><a href="axs.sigma.tutoring@gmail.com">axs.sigma.tutoring@gmail.com</a></p>
+                        </div>
+                    </li>
+					<li>
+                        <a class="ns-img" href="img/divya.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Divya Natesan</b>, External Relations Chair</h3>
+                            <p>Spring 2015 | 2nd year | Chemistry</p>
+							<p><a href="axs.sigma.pr@gmail.com">axs.sigma.pr@gmail.com</a></p>
+                        </div>
+                    </li>
+					<li>
+                        <a class="ns-img" href="img/laura.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Laura Strong</b>, Expansion Chair</h3>
+                            <p>Fall 2014 | 3rd year | Chemical Engineering</p>
+							<p><a href="axs.sigma.expansion@gmail.com">axs.sigma.expansion@gmail.com</a></p>
+                        </div>
+                    </li>
+					<li>
+                        <a class="ns-img" href="img/b.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Pearl Lee</b>, Fundraising Chair</h3>
+                            <p>Fall 2015 | 2nd year | Chemistry</p>
+							<p><a href="axs.sigma.fundraising@gmail.com">axs.sigma.fundraising@gmail.com</a></p>
+                        </div>
+                    </li>
+					<li>
+                        <a class="ns-img" href="img/kevin.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Kevin Fong</b>, Professional Chair</h3>
+                            <p>Spring 2015 | 4th year | Chemical Biology</p>
+							<p><a href="axs.sigma.professional@gmail.com">axs.sigma.professional@gmail.com</a></p>
+                        </div>
+                    </li>
+					<li>
+                        <a class="ns-img" href="img/neil.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Neil Shieh</b>, Professional Chair</h3>
+                            <p>Spring 2015 | 3rd year | Chemical Biology</p>
+							<p><a href="axs.sigma.professional@gmail.com">axs.sigma.professional@gmail.com</a></p>
+                        </div>
+                    </li>
+					<li>
+                        <a class="ns-img" href="img/sajan.jpg"></a>
+                        <div class="caption">
+                            <h3><b>Sajan Patel</b>, Banquet Chair</h3>
+                            <p>Spring 2015 | 3rd year | Chemistry</p>
+							<p><a href="axs.sigma.banquet@gmail.com">axs.sigma.banquet@gmail.com</a></p>
+                        </div>
+                    </li>
+                </ul>
+                <div id="fsBtn" class="fs-icon" title="Expand/Close"></div>
             </div>
         </div>
+    </div>
 
-        <hr>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/a.jpg" class="img-responsive" alt="" onclick="lightbox(0)">
+				<center>Maureen Morla, President</center>
+            </div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/b.jpg" class="img-responsive" alt="" onclick="lightbox(1)">
+				<center>Sanum Patel, Vice President</center>
+            </div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/c.jpg" class="img-responsive" alt="" onclick="lightbox(2)">
+				<center>Roger Chang, Master of Ceremonies</center>
+            </div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/a.jpg" class="img-responsive" alt="" onclick="lightbox(3)">
+				<center>Eleanor Mudica, Master of Ceremonies</center>
+            </div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/nick.jpg" class="img-responsive" alt="" onclick="lightbox(4)">
+				<center>Nick Riasanovksy, Pledgemaster</center>
+            </div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/justin.jpg" class="img-responsive" alt="" onclick="lightbox(5)">
+				<center>Justin Wang, Treasurer</center>
+            </div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/rian.jpg" class="img-responsive" alt="" onclick="lightbox(6)">
+				<center>Rian Kormos, Investment Manager</center>
+            </div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/emily.jpg" class="img-responsive" alt="" onclick="lightbox(7)">
+				<center>Emily Yao, Webmaster</center>
+            </div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/annie.jpg" class="img-responsive" alt="" onclick="lightbox(8)">
+				<center>Annie Preece-Scaringe, Reporter</center>
+            </div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/b.jpg" class="img-responsive" alt="" onclick="lightbox(9)">
+				<center>Linda Xu, Recorder</center>
+            </div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/lisha.jpg" class="img-responsive" alt="" onclick="lightbox(10)">
+				<center>Lisha Ou, Historian</center>
+            </div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/stephanie.jpg" class="img-responsive" alt="" onclick="lightbox(11)">
+				<center>Stephanie Robinson, Historian</center>
+            </div>
+        </div>
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/katherine.jpg" class="img-responsive" alt="" onclick="lightbox(12)">
+				<center>Katherine Jung, Alumni Secretary</center>
+            </div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/c.jpg" class="img-responsive" alt="" onclick="lightbox(13)">
+				<center>Sanya Seghal, Social Chair</center>
+            </div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/a.jpg" class="img-responsive" alt="" onclick="lightbox(14)">
+				<center>Virginia Garda, Tutoring Chair</center>
+            </div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/divya.jpg" class="img-responsive" alt="" onclick="lightbox(15)">
+				<center>Divya Natesan, External Relations Chair</center>
+            </div>
+        </div>
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/laura.jpg" class="img-responsive" alt="" onclick="lightbox(16)">
+				<center>Laura Strong, Expansion Chair</center>
+            </div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/b.jpg" class="img-responsive" alt="" onclick="lightbox(17)">
+				<center>Pearl Lee, Fundraising Chair</center>
+            </div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/kevin.jpg" class="img-responsive" alt="" onclick="lightbox(18)">
+				<center>Kevin Fong, Professional Chair</center>
+            </div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/neil.jpg" class="img-responsive" alt="" onclick="lightbox(19)">
+				<center>Neil Shieh, Professional Chair</center>
+            </div>
+        </div>
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-xs-6 thumbnail">
+				<img src="img/sajan.jpg" class="img-responsive" alt="" onclick="lightbox(20)">
+				<center>Sajan Patel, Banquet Chair</center>
+            </div>
+        </div>
+	</div>
+
+    <hr>
 	
 	<!-- Footer -->
     <footer>
@@ -307,37 +424,21 @@
         });
     });
 	
-	// Get the modal
-var modal = document.getElementById('myModal');
+        function lightbox(idx) {
+            //show the slider's wrapper: this is required when the transitionType has been set to "slide" in the ninja-slider.js
+            var ninjaSldr = document.getElementById("ninja-slider");
+            ninjaSldr.parentNode.style.display = "block";
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    modalImg.alt = this.alt;
-    captionText.innerHTML = this.alt;
-}
+            nslider.init(idx);
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+            var fsBtn = document.getElementById("fsBtn");
+            fsBtn.click();
+        }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-
-$(function(){
-      $(document.body)
-          .on('click touchend','#swipebox-slider .current img', function(e){
-              return false;
-          })
-          .on('click touchend','#swipebox-slider .current', function(e){
-              $('#swipebox-close').trigger('click');
-          });
-    });
+        function fsIconClick(isFullscreen) { //fsIconClick is the default event handler of the fullscreen button
+            var ninjaSldr = document.getElementById("ninja-slider");
+            ninjaSldr.parentNode.style.display = isFullscreen ? "block" : "none";
+        }
     </script>
 
 </body>
