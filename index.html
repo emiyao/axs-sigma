@@ -13,7 +13,6 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/animate.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
@@ -205,35 +204,72 @@
         </iframe>
     </section>
 	
-	  	<div class="row">
-<div class="col-sm-6 col-sm-offset-3">
-    <div class="well" style="margin-top: 10%;">
-    <h3>Send me a message</h3>
-    <form role="form" id="contactForm" data-toggle="validator" class="shake">
+	  	 <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1>Contact form</h1>
+                    <p class="lead">If you have any questions, please contact us.</p>
+                    <form id="contact-form" method="post" action="contact.php" data-toggle="validator" role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
         <div class="row">
-            <div class="form-group col-sm-6">
-                <label for="name" class="h4">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="Please fill out this field">
-                <div class="help-block with-errors"></div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">First name *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name" required="required" data-error="First name is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
             </div>
-            <div class="form-group col-sm-6">
-                <label for="email" class="h4">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-                <div class="help-block with-errors"></div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname">Last name *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name" required="required" data-error="Last name is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
             </div>
         </div>
-        <div class="form-group">
-            <label for="message" class="h4 ">Message</label>
-            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
-            <div class="help-block with-errors"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_phone">Phone</label>
+                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
         </div>
-        <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
-        <div id="msgSubmit" class="h3 text-center hidden"></div>
-        <div class="clearfix"></div>
-    </form>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Please enter your message" rows="4" required="required" data-error="Please leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+            </div>
+        </div>
     </div>
-</div>
-</div>
+
+</form> 
+                </div>
+            </div>
+        </div>
 
 	<!-- Footer -->
     <div class="panel-footer panel-custom">
@@ -272,14 +308,14 @@
     </div>
 
     <!-- jQuery -->
-    <script  type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="js/validator.min.js"></script>
-	<script type="text/javascript" src="js/form-scripts.js"></script>
-	
-	
+    <script src="js/jquery-1.12.0.min.js"></script>
+	<script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+	
+    <script src="js/validator.js"></script>
+    <script src="js/contact.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
