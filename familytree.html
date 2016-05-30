@@ -1,178 +1,571 @@
-<!DOCTYPE html>
-<html lang="en">
+<HTML>
 
-<head>
+	<HEAD>
+		
+<!--
+	This Family Echo file is Copyright (c) Familiality Ltd.
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Emily Yao">
+	This file may be distributed only in whole and unmodified, as part of a
+	family downloaded from Family Echo. You may make this file available on the
+	World Wide Web without modification, only if used to display a family
+	downloaded from Family Echo. You may make copies of this file for personal
+	archiving purposes, only as part of a family downloaded from Family Echo.
 
-    <title>Family Tree - Alpha Chi Sigma | Sigma Chapter</title>
+	This file may not be distributed or copied for any other purpose. You are
+	not permitted to modify, merge, publish, sublicense, rent, sell, lease,
+	loan, decompile, reverse engineer or create derivative works from this file.
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+	This copyright and license notice must be kept in all copies of this file.
+-->
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+		<LINK REL="stylesheet" TYPE="text/css" HREF="styles.css?160320">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-	<link rel="shortcut icon" href="img/coatofarms.png">
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+		
+		<TITLE>Family Echo - My Family</TITLE>
+		
+		<META NAME="Description" CONTENT="Draw your printable family tree online. Free and easy to use, no login required. Add photos and share with your family. Import/export GEDCOM files.">
+
+		
+		<SCRIPT language="JavaScript"><!--
+		var staticMode=true;
+		var hideSidebar=false;
+		var noCentering=false;
+		var defaultZoom=0.5;
+		var defaultDetail=null;
+		var defaultBirthName=0;
+		var defaultMiddleName=0;
+		var defaultShowPhoto=0;
+		var defaultCousins=15;
+		var defaultChildren=15;
+		var defaultParents=15;
+		var nameColors={
+			living : '#000',
+			deceased : '#777'
+		};
+		--></SCRIPT>
+
+		<script src="common.js?160320" type="text/javascript"></script>	
+		<script src="family.js?160320" type="text/javascript"></script>	
+		<script src="edit.js?160320" type="text/javascript"></script>	
+		<script src="tree.js?160320" type="text/javascript"></script>	
+	</HEAD>
 	
-<style>
-</style>
-</head>
-
-<body>
-
-    <!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-      <a class="navbar-brand" href="index.html">Alpha Chi Sigma | Sigma Chapter</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html">Home</a></li>
-		<li><a href="about.html">About</a></li>
-		<li class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Meet the Brothers<span class="caret"></span></a>
-			<ul class="dropdown-menu">
-			<li><a href="activemembers.html">Active Members</a></li>
-			<li><a href="excomm.html">Executive Committee</a></li>
-			<li><a href="pledgeclasses.html">Pledge Classes</a></li>
-			<li class="active"><a href="familytree.html">Family Tree</a></li>
-			</ul>
-		</li>
-        <li><a href="rush.html">Fall 2016 Rush</a></li>
-		<li><a href="events.html">Events and Services</a></li>
-		<li><a href="housing.html">Housing</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+	<BODY STYLE="overflow:hidden;" onLoad="PL();">
+		<TABLE WIDTH="100%" HEIGHT="100%" CELLSPACING=0 CELLPADDING=0>
 	
-	<!-- Page Content -->
-	<div class="col-lg-12">
-		<br><h1 class="page-header"><center>Family Tree</center></h1>
-	</div>
-	<div class="container">
-		<center>
-			<h1>Content is coming soon! In the mean time, please check out our other pages.</h1>
-		</center>
-	<br>
-	</div>
+			<TR HEIGHT="8">
+				<FORM NAME="topform" ACTION="./" METHOD="POST">
+					<TD STYLE="border-bottom:solid #666666 1px; padding:8px;" VALIGN="middle">
+						<TABLE WIDTH="100%" HEIGHT="100%" CELLSPACING=0 CELLPADDING=0><TR VALIGN="middle">
+							<TD NOWRAP><FONT STYLE="font-size:28px;">		<SPAN ID="lfamilyname"><FONT COLOR="#7F2020">My Family</FONT></SPAN>&nbsp;<SPAN ID="lfamilyinfo" STYLE="font-size:12px;"></SPAN>
+		
+		<IFRAME ID="backframe" WIDTH="1" HEIGHT="1" FRAMEBORDER="0" SCROLLING="no"></IFRAME>
+</FONT></TD>
+							<TD ALIGN="right">
 
-	
-	<!-- Footer -->
-    <div class="panel-footer panel-custom">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-				<br>
-				<center>
-					<a href="index.html">
-						<img src="img/coatofarms.png" alt="" class="img-responsive">
-					</a>
-				</center>
-                    <h4><strong>Alpha Chi Sigma | Sigma Chapter</strong>
-                    </h4>
-                    <p>2627 Virginia Street<br>Berkeley, CA 94709</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-envelope-o fa-fw"></i>President: <a href="axs.sigma.president@gmail.com">axs.sigma.president@gmail.com</a>
-                        </li>
-						<li><i class="fa fa-envelope-o fa-fw"></i>House Manager: <a href="administrator@axshouse.net">administrator@axshouse.net</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://www.facebook.com/AXS.Sigma/"target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="http://www.axshouse.net/" target="_blank"><i class="fa fa-map-marker fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-					<br>
-					<h4><strong>
-						<a href="http://www.alphachisigma.org/" target="_blank">Alpha Chi Sigma - Nationals</a> | <a href="http://chemistry.berkeley.edu/" target="_blank">UC Berkeley - College of Chemistry</a>
-					</strong></h4>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; 2016 Alpha Chi Sigma | Sigma Chapter - Website maintained by <a href="axs.sigma.web@gmail.com">Emily Yao</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+		<INPUT TYPE="hidden" ID="newscript" NAME="newscript" VALUE="
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-	
-	    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
+# Start of FamilyScript...
 
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
+iSTART	pOral	lCaglar, Σ1988	go
+iF096I	^START	fSTART	lTakahara	qTakahara	pPatricia Takahara	go
+iK2KKQ	^START	mSTART	lColline, Σ1984	pChristian	go
+iZ7V9R	^K2KKQ	mK2KKQ	lDamberger, Σ1988	pFred	go
+iP30ZX	^Z7V9R	mZ7V9R	lFreeman, Σ1993	pVicki	go
+iPQWDY	^P30ZX	mP30ZX	lAmavry, B1995	pCollene	go
+iWD4FV	^P30ZX	mP30ZX	lKonop, B1996	pKendra	go
+iZWAWE	^P30ZX	mP30ZX	lChilde, B1996	pMichael	go
+iO25MK	^P30ZX	mP30ZX	lKeiffer, B1997	pPhil	go
+iTS02K	^P30ZX	mP30ZX	lHuynh, B1998	pAllen	go
+iY4GE7	^P30ZX	mP30ZX	lCumming, B1998	pChad	go
+iS653R	^START	mSTART	lHall, Σ1990	pCollette	go
+iQQGKO	^START	mSTART	lMercer	pSuzanne	go
+iDDA5H	^START	mSTART	lJacubinas, Σ1988	pRick	go
+iZZZCK	^START	mSTART	lBrowning, Σ1990	pCatherine	go
+iHMCNL	^ZZZCK	mZZZCK	lM Andera, Σ1991	pKevin	go
+iEPQVO	^HMCNL	mHMCNL	lM Sible, Σ1994	pEmily	go
+iKPH6Z	^EPQVO	mEPQVO	lW Elliot, Σ1995	pJames	go
+iK22SB	^HMCNL	mHMCNL	lGrazinger, Σ1994	pDita	go
+iSQ24C	^K22SB	mK22SB	lLarrenaga	pBart	go
+iJSJTM	^K22SB	mK22SB	lAnn McDevitt	pLaura	go
+iGFZ41	^JSJTM	mJSJTM	lAcharya	pAjaya	go
+iYL4HM	^START	mSTART	lDrena, ΓZ	pBeth	go
+iXJ1CW	^START	mSTART	lCarpenter, ΓZ1991	pBrooke	go
+iW2YGK	^XJ1CW	mXJ1CW	lCarol Krenz, Σ1993	pDeanne	go
+iPKKFV	^W2YGK	mW2YGK	lLittlepage, Σ1994	pAmy	go
+iMMFSX	^W2YGK	mW2YGK	lVrska, Σ1998	pAnna	go
+iP5QBS	^W2YGK	mW2YGK	lChen, Σ1996	pYvonne	go
+iJHJDY	^W2YGK	mW2YGK	lLee, Σ1994	pJennifer	go
+iSD6C9	^P5QBS	mP5QBS	lProffitt, Σ1997	pCorinna	go
+iEUUZ6	^JHJDY	mJHJDY	lNarayan, Σ1994	pSharad	go
+iXGGI0	^JHJDY	mJHJDY	lChang, Σ1995	pJosephine	go
+iAI3G5	^EUUZ6	mEUUZ6	lRios, Σ1996	pGraham	go
+iA4FO9	^XGGI0	mXGGI0	lLim, Σ1995	pSandy	go
+iXHCMZ	^A4FO9	mA4FO9	lLin, Σ1997	pKelly	go
+iCZ7Z3	^A4FO9	mA4FO9	lHwang, Σ1996	pVincent	go
+iXZWN4	^CZ7Z3	mCZ7Z3	lChen, Σ1997	pMartin	go
+iR130W	^START	mSTART	lDesonglo, BΠ	pBen	go
+iUCSZH	^START	mSTART	lHauselt, BΠ1994	pMargaret	qHauselt, BΠ1994	go
+iK2OGV	^UCSZH	mUCSZH	lR Anderson, Σ1996	pDaniel	qR Anderson, Σ1996	go
+iEENYY	^UCSZH	mUCSZH	lGrancharov, Σ1997	pStephanie	go
+iSWLJ2	^START	mSTART	lBoucher, Γ1994	pMichelle	go
+iPVMSN	^START	mSTART	lBlake, Γ1996	pMargaret	go
+iXZLU1	^PVMSN	mPVMSN	lSchrall, Γ1997	pEric	go
+iOVHSL	^PVMSN	mPVMSN	lCreech, Σ1998	pEthan	go
+iBI4XR	^OVHSL	mOVHSL	lTang, Σ2001	pNick	qTang, Σ2001	go
+iBDVRQ	^START	mSTART	lQuan, Σ1993	pMichael	go
+iG1Z4H	^START	mSTART	lLewis, Σ1995	pAdara	go
+iZOOAC	^START	mSTART	lMurase, Σ2000	pMorio	go
+iTT5MP	^ZOOAC	mZOOAC	lWu, Σ2001	pCaroline	go
+iV6R5I	^ZOOAC	mZOOAC	lPham, Σ2002	pPhi	go
+iQS6KV	^ZOOAC	mZOOAC	lTrautwein, Σ2003	pAlexander	go
+iEJXFP	^ZOOAC	mZOOAC	lHao, Σ2004	pDong	go
+iG19NK	^QS6KV	mQS6KV	lE Marti, Σ2004	pGeorge	go
+iI4QAU	^QS6KV	mQS6KV	lLiang, Σ2005	pTheresa	go
+iMOT7U	^I4QAU	mI4QAU	lYang, Σ2006	pJoyce	go
+iGYBN2	^MOT7U	mMOT7U	lHuynh, ΣSp2007	pSabrina	qHuynh, ΣSp2007	go
+iP293B	^TT5MP	mTT5MP	lPhoung, Σ2002	pLily	go
+iYGWAM	^TT5MP	mP293B	lLiang, Σ2003	pJoe	go
+iDZZIW	^TT5MP	mP293B	lSu, Σ2003	pSophia	go
+iXRV5D	^DZZIW	mDZZIW	lSaephanh, Σ2004	pAnnie	go
+iIDE1G	^YGWAM	mYGWAM	lKrishnamurthy, Σ2004	pChithra	go
+iR4PRC	^IDE1G	mIDE1G	lIav Yeh, Σ2004	pMarshall	go
+iSZTEV	^IDE1G	mIDE1G	lCodelli, Σ2005	pJay	go
+iLIGUJ	^IDE1G	mIDE1G	lCondy, Σ2006	pBryan	go
+iNOSQQ	^R4PRC	mR4PRC	lClark, Σ2005	pThomas	go
+iKKWB8	^R4PRC	mR4PRC	lKim, Σ2006	pJoseph	go
+iA871J	^NOSQQ	mNOSQQ	lTiwari, Σ2005	pNeil	go
+iYSZ6Y	^P293B	mP293B	lGong, Σ2003	pJennifer	go
+iOBULU	^YSZ6Y	mYSZ6Y	lBrozek, Σ2004	pLaura	go
+iJX8KO	^OBULU	mOBULU	lChen, Σ2004	pDanny	go
+iNZ18A	^OBULU	mOBULU	lCarlsen, Σ2005	pAndrina	go
+iPIIGM	^NZ18A	mNZ18A	lYoung Shin, Σ2005	pAh	go
+iZ5OL7	^NZ18A	mNZ18A	lWarren, Σ2006	pEmily	go
+iQBX8A	^NZ18A	mNZ18A	lParikh, ΣFall 2007	pPriya	go
+iU667B	^NZ18A	mNZ18A	lBischof, ΣFa2008	pThomas	go
+iCWLPP	^U667B	mU667B	lFong, ΣSp2009	pLam-Kiu	go
+iFYHDS	^CWLPP	mCWLPP	lPoon, ΣFa2009	pMichael	go
+iOBAUJ	^CWLPP	mCWLPP	lHo, ΣSp2010	pJessica	go
+iRY9ET	^OBAUJ	mOBAUJ	lPalting, ΣFa2010	pPedro	go
+iKSLXN	^RY9ET	mRY9ET	lJae-Youn Shin, ΣSp2012	pJames	go
+iG6DEJ	^U667B	mU667B	lYu, ΣFa2009	pHelen	go
+iWL0YJ	^KSLXN	mKSLXN	lEisele, ΣFa2013	pDante	gm
+iW2IX7	^WL0YJ	fWL0YJ	lZheng, ΣFa2014	pStevie	gm
+iJWA48	^W2IX7	fW2IX7	lAdams, ΣSp2015	pZoe	gm
+iG4CDO	^JWA48	fJWA48	lAguilar, ΣFa2015	pAlessandra	gm	qAguilar, ΣFa2015
+iP8TFS	^W2IX7	fW2IX7	lPittman, ΣSp2016	pAllen	go
+iAPPGN	^START	mSTART	lJensen, ΓZ2005	pHeather	go
+iREL7H	^APPGN	mAPPGN	lRichards, ΣSp2008	pMatt	go
+iSW2YR	^REL7H	mREL7H	lLee, ΣFa2008	pCrystal	go
+iO4YSX	^SW2YR	mSW2YR	lLeon, ΣSp2009	pJose	go
+iE4HRU	^REL7H	mREL7H	lHusain, ΣSp2009	pAriana	go
+iYFLP8	^REL7H	mREL7H	lGidanian, ΣFa2009	pSamuel	go
+iW7ZFT	^REL7H	mREL7H	lNadgauda, ΣSp2010	pHimani	go
+iDLJJ4	^W7ZFT	mW7ZFT	lChui, ΣFa2010	pHarvey	go
+iI1R47	^DLJJ4	mDLJJ4	lChang, ΣSp2011	pCorissa	go
+iN13GU	^YFLP8	mYFLP8	lSapida, ΣSp2010	pRaymond	go
+iQLPFC	^N13GU	mN13GU	lKim, ΣFa2010	pSeokhyoung	go
+iMPVAU	^YFLP8	mYFLP8	lPostigo, ΣFa2010	pVictoria	go
+iU91LI	^MPVAU	mMPVAU	lLouden, ΣSp2012	pSam	go
+iR46IX	^MPVAU	mMPVAU	lDutta, ΣSp2011	pAkshita	go
+iTM61I	^U91LI	mU91LI	lUng, ΣFa2012	pJosephine	go
+iHORJ4	^TM61I	mTM61I	lLay, ΣSp2013	pTiffany	go
+iAUYJU	^HORJ4	mHORJ4	lShen, ΣFa2013	pZhoutian	go
+iPQ24X	^HORJ4	mHORJ4	lWang, ΣSp2014	pApril	go
+iGVDK0	^PQ24X	mPQ24X	lNimlos, ΣFa2015	pDanika	gm
+iA52FR	^HORJ4	mHORJ4	lYamanaka, ΣSp2016	pReo	gm
+iUDLTX	^TM61I	mTM61I	lPan, ΣFa2013	pJay	gm
+iGKGJD	^TM61I	mTM61I	lCohen, ΣFa2013	pEvan	gm
+iZU59R	^TM61I	mTM61I	lRodas, ΣFa2014	pEsteban	gm
+iAT3W9	^UDLTX	fUDLTX	lLam, ΣFa2014	pSophia	gm
+iBEOHR	^AT3W9	fAT3W9	lPatel, ΣSp2015	pSanum	gm
+iX2852	^BEOHR	fBEOHR	lTian, ΣSp2016	pXinran	gm
+iJYHET	^UDLTX	fUDLTX	lChang, ΣSp2015	pRoger	gm
+iXU2Z8	^JYHET	fJYHET	lZhang, ΣFa2015	pJordan	gm
+iTF5A9	^F096I	mF096I	lTsai	pPeter	go
+iWN9EB	^TF5A9	mTF5A9	lRan	pJoseph	go
+iASBBH	^WN9EB	mWN9EB	lLoutzenhiser, Σ1993	pMark	go
+iW83U2	^ASBBH	mASBBH	lTroeltzsch, Σ1994	pChristina	go
+iEPDUE	^W83U2	mW83U2	lChang, Σ1994	pMichael	go
+iU0VCU	^W83U2	mW83U2	lHuang, Σ1995	pMatthew	go
+iTRDRB	^W83U2	mW83U2	lPeters, Σ1996	pDavid	go
+iFEP8E	^W83U2	mW83U2	lJohn Rusting, Σ1995	pMark	go
+iJB56E	^W83U2	mW83U2	lTobe, Σ1996	pZanta	go
+iGJEG0	^W83U2	mW83U2	lRobert Dutra, Σ1997	pAdam	go
+iIX9U3	^JB56E	mJB56E	lYamasaki, Σ1998	pNaomi	go
+iEWDPF	^IX9U3	mIX9U3	lRogers, Σ2000	pMichelle	go
+iIHJEN	^IX9U3	mIX9U3	lDrouillard, Σ1999	pMarissa	go
+iX7YJA	^IX9U3	mIX9U3	lMcIntyre, Σ2000	pShanna	go
+iM6VEA	^IX9U3	mIX9U3	lCho, Σ1999	pYonah	go
+iDBT0E	^IX9U3	mIX9U3	lAgcaoili, Σ2000	pAndrea	go
+iIX6IJ	^DBT0E	mDBT0E	lHutches, Σ2000	pKatherine	go
+iCJKWD	^IX6IJ	mIX6IJ	lDavis, Σ2003	pKelly	go
+iI1FAW	^CJKWD	mCJKWD	lCarpio, Σ2003	pMelissa	go
+iYY5A6	^CJKWD	mCJKWD	lMansergh, Σ2006	pRyan	go
+iR8KRF	^I1FAW	mI1FAW	lWen, Σ2005	pPatrick	go
+iLFSCA	^R8KRF	mR8KRF	lAvecilla, Σ2005	pAudrey	go
+iOW7QS	^R8KRF	mR8KRF	lvan Spyk, Σ2006	pMarijke	go
+iISMXD	^LFSCA	mLFSCA	lDela Cruz, Σ2006	pJoanne	go
+iELXPB	^OW7QS	mOW7QS	lBrandes, Σ2006	pAlissa	go
+iWX83C	^OW7QS	mOW7QS	lBloom, ΣFa2008	pEmily	go
+iLO5UJ	^WX83C	mWX83C	lPark, ΣFa2009	pSabrina	go
+iKN2TP	^LO5UJ	mLO5UJ	lLo, ΣSp2010	pLiana	go
+iR2DZX	^LO5UJ	mLO5UJ	lGarcia, ΣFa2010	pMiguel	go
+iYG541	^R2DZX	mR2DZX	lMao, ΣFa2011	pSunnie	go
+iUXTZN	^YG541	mYG541	lCarlisle, ΣFa2013	pJolie	go
+iFRTUS	^UXTZN	mUXTZN	lWoolf, ΣSp2014	pEmma	go
+iIGU62	^FRTUS	mFRTUS	lBotros, ΣFa2014	pSam	go
+iL17SI	^IGU62	mIGU62	lGarda, ΣSp2015	pVirginia	gm
+iDCX4P	^L17SI	fL17SI	lChoi, ΣFa2015	pBrian	gm
+iYYGFM	^DCX4P	fDCX4P	lXu, ΣSp2016	pLinda	gm
+iHYXC5	^IHJEN	mIHJEN	lMcDaniel, Σ1999	pAshley	go
+iCLCBK	^HYXC5	mHYXC5	lClark, Σ2000	pShaunna	go
+iAS4Y3	^HYXC5	mHYXC5	lHenggeler, Σ2002	pTimothy	go
+iW0M6U	^HYXC5	mHYXC5	lBains, Σ2002	pAlexis	go
+iH27YZ	^W0M6U	mW0M6U	lYamada, Σ2003	pSayumi	go
+iS0L8M	^CLCBK	mCLCBK	lM Webster, Σ2002	pKaren	go
+iW5947	^CLCBK	mCLCBK	lLehrman, Σ2003	pJessica	go
+iZB9GG	^S0L8M	mS0L8M	lVosqueritchian, Σ2004	pMichael	go
+iQG9UV	^S0L8M	mS0L8M	lQi, Σ2005	pHaibo	go
+iPD35V	^ZB9GG	mZB9GG	lMellon, Σ2005	pErin	go
+iZHF4Q	^W5947	mW5947	lWu, Σ2004	pJessica	go
+iZ4PTF	^ZHF4Q	mZHF4Q	lC Perry, Σ2004	pKyle	go
+iBUX6R	^ZHF4Q	mZHF4Q	lLi, Σ2005	pCarmen	go
+iAEP7R	^BUX6R	mBUX6R	lLai, Σ2006	pChristy	go
+iC1CE1	^Z4PTF	mZ4PTF	lWong, Σ2005	pRobyn	go
+iIBF51	^Z4PTF	mZ4PTF	lScott Stevenson, Σ2005	pJ	go
+iVTCTP	^IBF51	mIBF51	lCheng, Σ2006	pGabe	go
+iRBIEB	^C1CE1	mC1CE1	lGendler, Σ2005	pLiya	go
+iA1JRI	^C1CE1	mC1CE1	lLanam, Σ2006	pRobin	go
+iOKE97	^A1JRI	mA1JRI	lGoswami, ΣSp2007	pAaron	go
+iC28P2	^OKE97	mOKE97	lSong, ΣSp2007	pJonathan	go
+iRFDWZ	^C28P2	mC28P2	lLai, ΣFa2008	pNicole	go
+iD04O3	^RFDWZ	mRFDWZ	lPadovani, ΣSp2009	pChris	go
+iHSMDL	^D04O3	mD04O3	lNguyen, ΣFa2009	pTheresa	go
+iZ10OS	^RBIEB	mRBIEB	lAlexander, Σ2006	pKevin	go
+iZGJ14	^RBIEB	mRBIEB	lEmperador, ΣSp2007	pIan	go
+iLXCIP	^Z10OS	mZ10OS	lScott, Σ2006	pMark	go
+iMAA9E	^Z10OS	mZ10OS	lNguyen, Σ2006	pCatherine	go
+iCHQYP	^Z10OS	mZ10OS	lLim, ΣSp2007	pChris	go
+iSAYZJ	^Z10OS	mZ10OS	lLiu, ΣSp2009	pCarol	go
+iE3XVC	^LXCIP	mLXCIP	lGolzy, ΣSp2007	pNima	go	qGolzy, ΣSp2007
+iYWTGN	^E3XVC	mE3XVC	lGao, ΣFa2008	pJuliana	go
+iOYGUB	^YWTGN	mYWTGN	lWong, ΣSp2009	pStephanie	go
+iQ0H70	^OYGUB	mOYGUB	lGin, ΣSp2010	pLuanna	go
+iWP3TY	^Q0H70	mQ0H70	lNguyen, ΣFa2011	pPhong	go
+iCC73Q	^WP3TY	mWP3TY	lYiu, ΣSp2011	pDavid	go
+iR5K3B	^CC73Q	mCC73Q	lZhang, ΣSp2012	pHanyu	go
+iYBXJX	^GJEG0	mGJEG0	lVandePol, Σ1998	pHendrick	go
+iVWEEL	^GJEG0	mGJEG0	lNaaman, Σ1999	pSermed	go
+iI2V64	^GJEG0	mGJEG0	lSiami, Σ2000	pSam	go
+iIO6VD	^GJEG0	mGJEG0	lStephen Low, Σ1998	pEric	go
+iF3NZR	^GJEG0	mGJEG0	lGanim, Σ2001	pZiad	go
+iUSO1P	^IO6VD	mIO6VD	lHaas, Σ1998	pEric	go
+iZ29LC	^USO1P	mUSO1P	lThai Chan, Σ1999	pYin	go
+iTVZB2	^USO1P	mUSO1P	lLee, Σ1999	pChris	go
+iGZTCR	^USO1P	mUSO1P	lRatto, Σ2003	pJeff	go
+iWX51A	^USO1P	mUSO1P	lPine, Σ2003	pSally	go
+iZENJE	^USO1P	mUSO1P	lOpatkiewicz, Σ2004	pJustin	go
+iVKUCS	^ZENJE	mZENJE	lEscalante, Σ2005	pFabiola	go
+iGNMFN	^ZENJE	mZENJE	lPeng, Σ2006	pSam	go
+iAUK5W	^GNMFN	mGNMFN	lRan Zou, Σ2006	pMike	go
+iFFGYA	^WX51A	mWX51A	lWaki, Σ2004	pTisha	go
+iJUN27	^FFGYA	mFFGYA	lAvakians, Σ2004	pLoosineh	go
+iZZ2HN	^GZTCR	mGZTCR	lMendoza, Σ2003	pJeraldine	go
+iH01ND	^GZTCR	mGZTCR	lHsu, Σ2004	pBryan	go
+iMSVVB	^ZZ2HN	mZZ2HN	lMontgomery, Σ2004	pDavid	go
+iERVL9	^ZZ2HN	mZZ2HN	lLin, Σ2006	pDiana	go
+iI4T33	^MSVVB	mMSVVB	lGeissler PhD, Σ2006	pPhillip	go
+iRW1FV	^MSVVB	mMSVVB	lLam, Σ2006	pLisa	go
+iUWO2P	^MSVVB	mMSVVB	lGriffin, Σ2006	pKim	go
+iCPQLP	^F3NZR	mF3NZR	lPowell White, Σ2002	qGanim, Σ2001	pJohn	go
+iN9H4E	^F3NZR	mF3NZR	lGoldenberg, Σ2003	pVlad	go
+iPWV0B	^CPQLP	mCPQLP	lPaley, Σ2003	pOlga	go
+iJNDMU	^CPQLP	mCPQLP	lEastoak-Siletz, Σ2004	pAnaar	go
+iTKGIW	^PWV0B	mPWV0B	lAllison III, Σ2004	pThomas	go
+iDU4QV	^CPQLP	mCPQLP	lOliver Hughes, Σ2004	pColin	go
+iHSMX8	^CPQLP	mCPQLP	lHoang, Σ2006	pScott	go
+iNBDGY	^CPQLP	mCPQLP	lPurdham, ΣFa2007	pMichael	go
+iE0DL3	^DU4QV	mDU4QV	lBush, Σ2005	pAdrian	go
+iMMVKZ	^DU4QV	mDU4QV	lLong, Σ2005	pDararith	go
+iGYO6F	^MMVKZ	mMMVKZ	lWakita, Σ2006	pAllison	go
+iS7O4Q	^E0DL3	mE0DL3	lMathews, ΣSp2007	pIan	go
+iKU9BN	^S7O4Q	mS7O4Q	lYang, ΣFa2009	pLynn	go
+iB5DHQ	^KU9BN	mKU9BN	lWong, ΣSp2010	pMandy	go
+iL71JJ	^B5DHQ	mB5DHQ	lWong, ΣSp2012	pNolan	go
+iBND9G	^L71JJ	mL71JJ	lLee, ΣSp2013	pYoujin	go
+iOR1N5	^N9H4E	mN9H4E	lOkabe, Σ2003	pYuka	go
+iWD81B	^OR1N5	mOR1N5	lChi, Σ2004	pMargaret	go
+iBHWSS	^N9H4E	mN9H4E	lFrancis PhD, Σ2004	pMatthew	go
+iZ7BYP	^N9H4E	mN9H4E	lAn, Σ2005	pChihui	go
+iG5T2H	^N9H4E	mN9H4E	lLockwood, Σ2006	pEvan	go
+iMFON7	^N9H4E	mN9H4E	lRoberson, Σ2006	pRuss	go
+iQBH6H	^MFON7	mMFON7	lFink, ΣFa2007	qRoberson, Σ2006	pKatie	go
+iU23C6	^Z7BYP	mZ7BYP	lChung, Σ2006	pAndrew	go
+iMX2I6	^U23C6	mU23C6	lNguyen, ΣFa2007	pAnh	go
+iCXYGK	^U23C6	mU23C6	lJiang, ΣSp2008	pShuai	go
+iBXY17	^MX2I6	mMX2I6	lJian Tan, ΣFa2008	pWen	go
+iSLYEB	^MX2I6	mMX2I6	lHena Jo, ΣFa2008	pHyuna	go
+iN1JO1	^CXYGK	mCXYGK	lGe, ΣFa2009	pDavid	go
+iYBNVR	^N1JO1	mN1JO1	lTang, ΣSp2010	pAster	go
+iVCVT1	^N1JO1	mN1JO1	lChu, ΣSp2010	pCrystal	go
+iOKQG1	^N1JO1	mN1JO1	lTaylor, ΣFa2010	pNicole	go
+iJ8O1F	^YBNVR	mYBNVR	lHo, ΣFa2010	pSam	go
+iT87RM	^J8O1F	mJ8O1F	lHeczko, ΣSp2011	pJoshua	go
+iOQO5E	^T87RM	mT87RM	lFeng, ΣSp2012	pZiyan	go
+iUVNDE	^OQO5E	mOQO5E	lChen, ΣFa2012	pYufei	go
+iW55YA	^UVNDE	mUVNDE	lNguyen, ΣSp2013	pLien	go
+iTPQE2	^UVNDE	mUVNDE	lWang, ΣFa2013	pYiran	go
+iO5CVE	^OKQG1	mOKQG1	lSrinilta, ΣSp2011	pDianne	go
+iXAOQ3	^O5CVE	mO5CVE	lChang, ΣSp2012	pJesse	go
+iVFND5	^O5CVE	mO5CVE	lPennathur, ΣFa2012	pShoumik	go
+iE074N	^XAOQ3	mXAOQ3	lCondon, ΣFa2012	pSam	go
+iJ45UD	^XAOQ3	mXAOQ3	lKim, ΣSp2013	pRuth	go
+iWZ1EI	^J45UD	mJ45UD	lMelville, ΣFa2013	pJonathan	go
+iBSIIX	^J45UD	mJ45UD	lXu, ΣFa2013	pJiansong	go
+iHUE1V	^XAOQ3	mXAOQ3	lMorla, ΣFa2013	pMaureen	gm
+iL4VV1	^HUE1V	fHUE1V	lMudica, ΣFa2014	pEleanor	gm
+iW3VNA	^HUE1V	fHUE1V	lFong, ΣSp2015	pKevin	gm
+iVPOZL	^L4VV1	fL4VV1	lKim, ΣSp2016	pPhil	gm
+iJ37WJ	^W3VNA	fW3VNA	pAnthony	lKim, ΣSp2015	gm
+iIL7MX	^W3VNA	fW3VNA	lPreece-Scaringe, ΣSp2016	pAnnie	gm
+iL1R8J	^VFND5	mVFND5	lLue, ΣFa2013	pNicholas	gm
+iPC8XG	^L1R8J	fL1R8J	lGekko, ΣSp2014	pColby	gm
+iSQ29T	^PC8XG	fPC8XG	lJing, ΣFa2014	pAlex	gm
+iDY9HR	^SQ29T	fSQ29T	lChan, ΣSp2015	pMason	gm
+iFV7MV	^PC8XG	fPC8XG	lXia, ΣSp2015	pCarrol	gm
+iI03AZ	^L1R8J	fL1R8J	lChiu, ΣFa2014	pChris	gm
+iPQBW4	^I03AZ	fI03AZ	lHarnetiaux, ΣSp2015	pKaterina	gm
+iPLRXS	^I03AZ	fI03AZ	lLiu, ΣFa2015	pAlan	gm
+iEUS3O	^L1R8J	fL1R8J	lZhu, ΣSp2015	pJiawei	gm
+iKEZD1	^L1R8J	fL1R8J	lTravis, ΣSp2016	pClair	gm
+iROR3R	^EUS3O	fEUS3O	lSeghal, ΣFa2015	pSanya	gm
+iVXW3X	^G5T2H	mG5T2H	lSong, Σ2007	pShirley	go
+iJ53ZX	^G5T2H	mG5T2H	lMcClean, ΣSp2008	pJarrod	go
+iE39WG	^G5T2H	mG5T2H	lNguyen, ΣFa2008	pMargaret	go
+iQCAVP	^G5T2H	mG5T2H	lTo, ΣSp2009	pChing	go
+iMTARN	^G5T2H	mG5T2H	lLee, ΣFa2009	pPatrick	go
+iHISUO	^VXW3X	mVXW3X	lFarjadi, ΣSp2010	pRoxana	go
+iDYJ62	^HISUO	mHISUO	lChirichella, ΣFa2010	pGina	go
+iWAA0N	^HISUO	mHISUO	lJones, ΣFa2011	pStephen	go
+iKL7R5	^HISUO	mHISUO	lGuegler, ΣFa2012	pChantal	go
+iTTRNU	^WAA0N	mWAA0N	lWinter, ΣFa2012	pWes	go
+iF6Y2Z	^TTRNU	mTTRNU	lGrant, ΣSp2013	pLauren	go
+iR90PI	^TTRNU	mTTRNU	lUmpriani, ΣFa2013	pDimitri	go
+iCRIPN	^TTRNU	mTTRNU	lChen, ΣFa2014	pEllison	go
+iED2LG	^CRIPN	mCRIPN	lLee, ΣFa2015	pPearl	gm
+iSGVPZ	^ED2LG	fED2LG	lRobinson, ΣSp2016	pStephanie	gm
+iNDB6U	^J45UD	mJ45UD	lScheuermann, ΣFa2014	pAngelique	gm
+iFX07I	^BSIIX	mBSIIX	lWard, ΣSp2014	qXu, ΣFa2013	pRoss	go
+iQPMM8	^J53ZX	mJ53ZX	lZhu,  ΣFa2008	pJieling	go
+iH700O	^QPMM8	mQPMM8	lGarwin, ΣFa2009	pSeth	go
+iIWAIN	^H700O	mH700O	lHan,ΣSp2010	pYisu	go
+iGVKN7	^H700O	mH700O	lHohman, ΣFa2010	pVictoria	go
+iU0JEG	^GVKN7	mGVKN7	lDias, ΣFa2011	pBryton	go
+iYFOK4	^U0JEG	mU0JEG	lHu, ΣSp2012	pRyan	go
+iBOYVH	^U0JEG	mU0JEG	lHong, ΣSp2013	pRichard	go
+iR1B58	^BOYVH	mBOYVH	lZhao, ΣSp2014	pRunyu	go
+iI9PSH	^BOYVH	mBOYVH	lZhao, ΣFa2014	pNanxia	go
+iEEQ3F	^U0JEG	mU0JEG	lLi, ΣFa2013	pJesse	go
+iF5PIE	^U0JEG	mU0JEG	lSingh, ΣFa2013	pAmandeep	go
+iTEBL4	^F5PIE	mF5PIE	lAlhomoud, ΣSp2014	pNayif	gm
+iHC5ZT	^F5PIE	mF5PIE	lChatterjee, ΣFa2014	pAnyun	gm
+iI1VRM	^TEBL4	fTEBL4	lBuo, ΣFaFa2014	pSorinna	gm
+iMPU1T	^I1VRM	fI1VRM	lChen, ΣSp2015	pLvuxiao	gm
+iXEQSY	^HC5ZT	fHC5ZT	lManoharan, ΣSp2015	pEshwar	gm
+iJKMT9	^QCAVP	mQCAVP	lLee, ΣSp2010	pKihong	go
+iSWXVK	^JKMT9	mJKMT9	lWood, ΣFa2010	pCameron	go	qWood,ΣFa2010
+iUQ3LV	^JKMT9	mJKMT9	lNechayev, ΣSp2012	pMichael	go
+iDENNX	^SWXVK	mSWXVK	lNg, ΣSp2011	pThomas	go
+iVEB2A	^SWXVK	mSWXVK	lNicklas, ΣFa2011	pWillie	go
+iD6B4H	^VEB2A	mVEB2A	lSteinsapir, ΣFa2012	pAndrew	go
+iJ1QLH	^SWXVK	mSWXVK	lYoo, ΣSp2012	pStan	go
+iT5TYK	^J1QLH	mJ1QLH	lViazon, ΣFa2012	pVianca	go
+iL7YIL	^J1QLH	mJ1QLH	lBae, ΣSp2013	pYounjue	go
+iRWE7Y	^J1QLH	mJ1QLH	lHu, ΣFa2013	pWennie	go
+iT2UI6	^T5TYK	mT5TYK	lJiao, ΣSp2013	pJune	go
+iQ6HVY	^T2UI6	mT2UI6	lDien, ΣFa2013	pVivian	go
+iXPPL7	^T5TYK	mT5TYK	lBansal, ΣFa2013	pShivya	gm
+iJTV6F	^T2UI6	mT2UI6	lJung, ΣSp2014	pJaehee	gm
+iO0FA2	^XPPL7	fXPPL7	lIglesias, ΣSp2014	pRicco	gm
+iNMW09	^T5TYK	mT5TYK	lCahill, ΣFa2013	pBen	gm
+iL5XOW	^NMW09	fNMW09	lAchacoso, ΣSp2014	pAnthony	gm
+iARR50	^T5TYK	mT5TYK	lStrong, ΣFa2014	pLaura	gm
+iM2ERI	^ARR50	fARR50	lGibbert, ΣSp2015	pCharlene	go
+iA99XW	^M2ERI	mM2ERI	lLee, ΣFa2015	pAngela	gm
+iZYQ2Z	^A99XW	fA99XW	lYang, ΣSp2016	pYolanda	gm
+iLXH00	^ARR50	fARR50	lBernbeck, ΣFa2015	pMax	gm
+iJKYYF	^ARR50	fARR50	lWallace, ΣSp2016	pShelby	gm
+iHPTWD	^UQ3LV	mUQ3LV	lCerda, ΣSp2013	pMartha	go
+iUEWVP	^UQ3LV	mUQ3LV	lWang, ΣFa2014	pJustin	gm
+iF4AMO	^UQ3LV	mUQ3LV	lKormos, ΣSp2015	pRian	gm
+iBXXWH	^F4AMO	fF4AMO	lLiang, ΣSp2016	pJiatao	gm
+iH271U	^UEWVP	fUEWVP	lTao, ΣSp2015	pYujia	gm
+iJMQ95	^H271U	fH271U	lChang, ΣFa2015	pMatthew	gm
+iEA33D	^UEWVP	fUEWVP	lPoon, ΣSp2016	pRaymond	gm
+iBLJ9M	^HPTWD	mHPTWD	lLy, ΣFa2013	pPhil	go	qLy, ΣFa2013
+iQ5PY7	^BLJ9M	fBLJ9M	lWu, ΣSp2014	pTommy	gm
+iGOQMA	^BLJ9M	mBLJ9M	lKim, ΣFa2014	pBrandom	gm
+iU7YB6	^Q5PY7	fQ5PY7	lYang, ΣFa2014	pElvin	gm
+iK69F4	^GOQMA	fGOQMA	lMartinez, ΣSp2015	pAnthony	gm
+iGCLRT	^U7YB6	fU7YB6	lKo, ΣSp2015	pKevin	gm
+iSZQML	^U7YB6	fU7YB6	lLeskova, ΣFa2015	pAnna	gm
+iM12WH	^GCLRT	fGCLRT	lYang, ΣFa2015	pAndrew	gm
+iDD5TD	^SZQML	fSZQML	lPrice, ΣSp2016	pRiley	gm
+iW8T43	^M12WH	fM12WH	lHe, ΣSp2016	pManni	gm
+iVWEIN	^MTARN	mMTARN	lDockstader, ΣSp2011	pErika	go
+iVXFUJ	^VWEIN	mVWEIN	lWang, ΣFa2011	pKevin	go	qWang, ΣFa2011
+iNWEF7	^VWEIN	mVWEIN	lUribe, ΣSp2013	pEric	go
+iLLRYV	^VXFUJ	mVXFUJ	lAdre, ΣFa2012	pErika	go
+iGMZ2H	^LLRYV	mLLRYV	lSit, ΣFa2013	pIzaac	go
+iONNLS	^GMZ2H	mGMZ2H	lBanderas, ΣFa2014	pAlfonso	gm
+iP8WX1	^ONNLS	fONNLS	lShieh, ΣSp2015	pNeil	gm
+iOSQAN	^ONNLS	fONNLS	lPark, ΣFa2015	pSean	gm
+iPIBYP	^P8WX1	fP8WX1	lJung, ΣFa2015	pKatherine	gm
+iY3ADK	^NWEF7	mNWEF7	lYao, ΣSp2014	pEmily	gm
+iH7320	^NWEF7	mNWEF7	lGandhi, ΣFa2014	pShivaani	gm
+iOGG10	^H7320	fH7320	lTran, ΣFa2015	pLivia	gm
+iFBILY	^H7320	fH7320	lHendrickson, ΣSp2016	pDrew	gm
+iR9UZH	^Y3ADK	fY3ADK	lGiang, ΣFa2014	pBrian	gm
+iREP25	^Y3ADK	fY3ADK	lTucker, ΣSp2015	pMax	gm
+iZ2WSU	^Y3ADK	fY3ADK	lOu, ΣSp2016	pLisha	gm
+iNOAAJ	^R9UZH	fR9UZH	lPatel, ΣSp2015	pSajan	gm
+iC1ZFW	^R9UZH	fR9UZH	lLim, ΣFa2015	pDaren	gm
+iW6H40	^NOAAJ	fNOAAJ	lNatesan, ΣFa2015	pDivya	gm
+iXO2NG	^REP25	fREP25	lPark, ΣFa2015	pWon	gm
+iS4APZ	^XO2NG	fXO2NG	lRiasanovsky, ΣSp2016	pNick	gm
+iQ9UG4	^S653R	mS653R	lWoo, Σ1992	pHoward	go
+iZD7U1	^S653R	mS653R	lK Hakenen, Σ1993	pAaron	go
+iVNFBS	^ZD7U1	mZD7U1	lSuseno, Σ1995	pAudrey	go
+iOOTAU	^ZD7U1	mZD7U1	lLee, Σ1996	pTrevor	go
+iL0FWE	^ZD7U1	mZD7U1	lElliot Davidow, Σ1994	pJed	go
+iUVN4Z	^OOTAU	mOOTAU	lW., Σ1997	pY.	go
+iGJQO9	^UVN4Z	mUVN4Z	lBabakhani, Σ1997	pArneh	go
+iLENMG	^L0FWE	mL0FWE	lLin	pErick	go
+iRS72H	^L0FWE	mL0FWE	lJung, Σ1995	pHelen	go
+iQH2TP	^L0FWE	mL0FWE	lBailey, Σ1996	pRobert	go
+iC1KIH	^L0FWE	mL0FWE	lK Volkman, Σ1995	pSteve	go
+iKNRR1	^C1KIH	mC1KIH	lLee, Σ1998	pAlice	go
+iJ57OX	^C1KIH	mC1KIH	lCallis, Σ2000	pPeter	go
+iKWE9G	^KNRR1	mKNRR1	lYu, Σ2000	pKatherine	go
+iIVDJ7	^KWE9G	mKWE9G	lDzelzkalns, Σ2002	pEmma	go
+iN2HCR	^KNRR1	mKNRR1	lPlouffe, Σ2000	pPaul	go
+iE8LKW	^KNRR1	mKNRR1	lBertozzi, Σ2001	pCarolyn	go
+iQW8Y0	^KNRR1	mKNRR1	lNguyen, Σ1999	pGondica	go
+iL83T2	^QW8Y0	mQW8Y0	lOmega, Σ2000	pRuben	go
+iRG688	^QW8Y0	mQW8Y0	lSuarez, Σ2000	pMicha	go
+iZU8HB	^RG688	mRG688	lLigeralde, Σ2001	pReina	go
+iU68S9	^J57OX	mJ57OX	lKo, Σ2001	pAudrey	go
+iV271C	^J57OX	mJ57OX	lLynn Riegert	pMelissa	go
+iWVR6D	^V271C	mV271C	lBeth Tadesco, Σ2004	pAudrey	go
+iRQ09E	^J57OX	mJ57OX	lLeung, Σ2004	pKeith	go
+iXHC7B	^RQ09E	mRQ09E	lA Espinosa, Σ2004	pCatalina	go
+iSE2Q3	^XHC7B	mXHC7B	lKoshkakaryan, Σ2006	pGayane	go
+iP988X	^RQ09E	mRQ09E	lPeralta, Σ2005	pAnna	go
+iTDFQ2	^RQ09E	mRQ09E	lLiu, Σ2005	pDan
+iZGIA6	^QQGKO	mQQGKO	lZoltan Nemeth, Σ1990	pAbel	go
+iTQ6ET	^ZGIA6	mZGIA6	lLumeng	pAmy	go
+iGJYY0	^ZGIA6	mZGIA6	lLatimer, Σ1992	pCharlene	go
+iXAM5U	^ZGIA6	mZGIA6	lRobert Sylwester, Σ1991	pEric	go
+iHDIKU	^ZGIA6	mZGIA6	lClouser, Σ1992	pKimberly	go
+iLYK5E	^HDIKU	mHDIKU	lA MacMurdo, Σ1992	pTimothy	go
+iHU21Z	^LYK5E	mLYK5E	lQuezon, Σ1993	pRon	go
+iRBG50	^LYK5E	mLYK5E	lGoto, Σ1993	pSera	go
+iVLL3R	^RBG50	mRBG50	lHolloway, Σ1994	pDavid	go
+iH9SVV	^RBG50	mRBG50	lM Thompson, Σ1995	pJeffrey	go
+iKNJFR	^XAM5U	mXAM5U	lGangadhara, Σ1993	pSanjay	go
+iDZGSM	^XAM5U	mXAM5U	lB. Yim, Σ1996	pH.	go
+iFWN5B	^XAM5U	mXAM5U	lLy, Σ1992	pJohn	go
+iLQ58U	^XAM5U	mXAM5U	lRyan Berger, Σ1994	pWilliam	go
+iD31FA	^XAM5U	mXAM5U	lLiu, Σ1998	pAustin	go
+iCKKGT	^LQ58U	mLQ58U	lBrandsetter	pRachel	go
+iLXF2C	^D31FA	mD31FA	lFay, Σ2000	pPhilip	go
+iYOI7N	^LXF2C	mLXF2C	lLee, Σ2001	pAndrew	go
+iU05JS	^LXF2C	mLXF2C	lLiang, Σ2002	pLi	go
+iB1T04	^U05JS	mU05JS	lRonnie Feng, Σ2004	pYunshao	go
+iVLGDI	^LXF2C	mLXF2C	lBuenaflor, Σ2006	pAlex	go
+iODYYH	^VLGDI	mVLGDI	lLiang, ΣFa2007	pAndrew	go
+iHZPKU	^ODYYH	mODYYH	lLau, ΣFa2008	pAngela	go
+iZRB5E	^HZPKU	mHZPKU	lChang, ΣSp2009	pDavid	go
+iC6MF1	^HZPKU	mHZPKU	lMorales, ΣFa2010	pAnn	go
+iR8F3D	^C6MF1	mC6MF1	lPokrzywa, ΣFa2012	pJosephine	go
+iGSA3D	^R8F3D	mR8F3D	lPark, ΣSp2013	pYirang	go
+iQHRVY	^GSA3D	mGSA3D	lZhou, ΣFa2013	pGiulio	go
+iQR62B	^QHRVY	mQHRVY	lAl-mubarak, ΣFa2014	pBader	gm
+iGZFE5	^GSA3D	mGSA3D	lMoore, ΣFa2014	pGreg	go
+iDFWYE	^GZFE5	mGZFE5	lSharma, ΣSp2015	pSumesh	gm
+iJUUZ4	^DFWYE	fDFWYE	lWiggenhorn, ΣFa2015	pAmanda	gm
 
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+# ...end of FamilyScript
 
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-	
-        function lightbox(idx) {
-            //show the slider's wrapper: this is required when the transitionType has been set to "slide" in the ninja-slider.js
-            var ninjaSldr = document.getElementById("ninja-slider");
-            ninjaSldr.parentNode.style.display = "block";
+">
+		<INPUT TYPE="hidden" ID="personid" NAME="personid" VALUE="">
+		<INPUT TYPE="hidden" ID="viewpersonid" NAME="viewpersonid" VALUE="START">
+		<INPUT TYPE="hidden" ID="viewmode" NAME="viewstate" VALUE="view">
+		<INPUT TYPE="hidden" ID="name" NAME="name" VALUE="">
+		<INPUT TYPE="hidden" ID="email" NAME="email" VALUE="">
+		
 
-            nslider.init(idx);
+		<INPUT TYPE="hidden" ID="founderid" VALUE="START">
+		<B>Standalone read only copy created by <A HREF="http://www.familyecho.com/" TITLE="Family Echo - Free Online Family Tree Maker"><IMG SRC="logo-80x16.gif" WIDTH="80" HEIGHT="16" BORDER="0" ALT="Family Echo" ALIGN="ABSBOTTOM"></A></B>			
+							</TD>
+						</TR></TABLE>
+					</TD>
+				</FORM>
+			</TR>
+		
+		<TR HEIGHT="*"><TD STYLE="position:relative;">
+			
+			<SCRIPT TYPE="text/javascript"><!--
+				document.write('<DIV ID="noajax"'+(document.getElementById ? ' STYLE="display:none;"' : '')+'><TABLE HEIGHT="100%" WIDTH="100%"><TR><TD ALIGN="center"><FONT COLOR="red"><B>Sorry. This site requires a modern web browser such as Firefox, Internet Explorer 6+ or Safari.</B></FONT></TD></TR></TABLE></DIV>');
+			--></SCRIPT>
+			
+			<NOSCRIPT>
+				<TABLE HEIGHT="100%" WIDTH="100%"><TR><TD ALIGN="center">
+					<FONT COLOR="red"><B>
+					Sorry - this site requires JavaScript in order to display your family.
+					<P>
+					If a security warning has appeared at the top of the browser window,
+					please click it to allow blocked content.
+					<P>
+					Otherwise, please switch on JavaScript in the Options... window of your browser.
+					</B></FONT>
+				</TD></TR></TABLE>
+			</NOSCRIPT>
+			
+			<DIV CLASS="fullsize" STYLE="position:relative;">
 
-            var fsBtn = document.getElementById("fsBtn");
-            fsBtn.click();
-        }
+				<DIV ID="treediv" CLASS="dright" STYLE="top:0px; height:100%; overflow:hidden;"><DIV ID="treemargin" CLASS="marginon"><IFRAME NAME="treeframe" ID="treeframe" SRC="tree.htm?160320" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="no"></IFRAME></DIV></DIV>
+				
+				<DIV ID="navdiv" CLASS="dright" STYLE="bottom:0px; height:64px; "><DIV ID="navmargin" CLASS="marginon"><IFRAME NAME="navframe" SRC="navigation.htm?160320" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="no"></IFRAME></DIV></DIV>
+				
+				<DIV ID="keydiv" CLASS="dright rbody" STYLE="bottom:64px; display:none; border-top:solid #666666 1px; padding:24px 0px 32px 0px; text-align:center;"><DIV ID="keymargin" CLASS="marginon"><DIV STYLE="font-size:14px; font-weight:bold; margin-bottom:24px;">Key to family tree diagram:</DIV><DIV STYLE="position:relative; margin:0 auto;" ID="keycontent"></DIV></DIV></DIV>
 
-        function fsIconClick(isFullscreen) { //fsIconClick is the default event handler of the fullscreen button
-            var ninjaSldr = document.getElementById("ninja-slider");
-            ninjaSldr.parentNode.style.display = isFullscreen ? "block" : "none";
-        }
-    </script>
+				<DIV ID="externaldiv" CLASS="dright" STYLE="top:0px; height:100%; display:none;"><DIV ID="externalmargin" CLASS="marginon" STYLE="background-color:white;"><IFRAME ID="externalurl" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="auto"></IFRAME></DIV></DIV>
 
-</body>
+				<DIV ID="welcomediv" STYLE="position:absolute; width:100%; top:16px;"><DIV ID="welcomemargin" CLASS="marginon"><CENTER>
 
-</html>
+				</CENTER></DIV></DIV>
+				
+				<DIV ID="leftdiv" CLASS="dleft" STYLE=""><IFRAME NAME="sideframe" SRC="sidebar.htm?160320" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="auto"></IFRAME></DIV>
+
+				<DIV ID="extradiv" CLASS="dleft lbody" STYLE="visibility:hidden;"><IFRAME ID="extraframe" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="auto"></IFRAME></DIV>
+				
+			</DIV>
+
+		</TD></TR>
+
+			<TR HEIGHT="8">
+				<TD STYLE="border-top:solid #666666 1px; padding:8px;" VALIGN="middle">
+					<DIV STYLE="float:left;">
+Dynamic HTML downloaded by Alpha Chi Sigma Webmaster on 30 May 2016.					</DIV>
+					<DIV STYLE="float:right;">
+<A HREF="http://www.familyecho.com/" TITLE="Family Echo - Free Online Family Tree Maker">Family Echo</A> &copy; Familiality 2016 - All rights reserved					</DIV>
+				</TD>
+			</TR>
+		</TABLE>
+
+	</BODY>
+
+</HTML>
