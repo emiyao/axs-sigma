@@ -18,11 +18,11 @@
 	This copyright and license notice must be kept in all copies of this file.
 -->
 
-		<LINK REL="stylesheet" TYPE="text/css" HREF="styles.css?160320">
+		<LINK REL="stylesheet" TYPE="text/css" HREF="styles.css?160919">
 
 		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
 		
-		<TITLE>Family Tree - Alpha Chi Sigma | Sigma Chapter</TITLE>
+		<TITLE>Family Echo - My Family</TITLE>
 		
 		<META NAME="Description" CONTENT="Draw your printable family tree online. Free and easy to use, no login required. Add photos and share with your family. Import/export GEDCOM files.">
 
@@ -31,24 +31,24 @@
 		var staticMode=true;
 		var hideSidebar=false;
 		var noCentering=false;
-		var defaultZoom=0.5;
+		var defaultZoom=1.25;
 		var defaultDetail=null;
 		var defaultBirthName=0;
 		var defaultMiddleName=0;
 		var defaultShowPhoto=0;
-		var defaultCousins=15;
-		var defaultChildren=15;
-		var defaultParents=15;
+		var defaultCousins=2;
+		var defaultChildren=8;
+		var defaultParents=5;
 		var nameColors={
 			living : '#000',
 			deceased : '#777'
 		};
 		--></SCRIPT>
 
-		<script src="common.js?160320" type="text/javascript"></script>	
-		<script src="family.js?160320" type="text/javascript"></script>	
-		<script src="edit.js?160320" type="text/javascript"></script>	
-		<script src="tree.js?160320" type="text/javascript"></script>	
+		<script src="common.js?160919" type="text/javascript"></script>	
+		<script src="family.js?160919" type="text/javascript"></script>	
+		<script src="edit.js?160919" type="text/javascript"></script>	
+		<script src="tree.js?160919" type="text/javascript"></script>	
 	</HEAD>
 	
 	<BODY STYLE="overflow:hidden;" onLoad="PL();">
@@ -58,7 +58,7 @@
 				<FORM NAME="topform" ACTION="./" METHOD="POST">
 					<TD STYLE="border-bottom:solid #666666 1px; padding:8px;" VALIGN="middle">
 						<TABLE WIDTH="100%" HEIGHT="100%" CELLSPACING=0 CELLPADDING=0><TR VALIGN="middle">
-							<TD NOWRAP><FONT STYLE="font-size:28px;">		<SPAN ID="lfamilyname"><FONT COLOR="#7F2020">Sigma Chapter Family Tree</FONT></SPAN>&nbsp;<SPAN ID="lfamilyinfo" STYLE="font-size:12px;"></SPAN>
+							<TD NOWRAP><FONT STYLE="font-size:28px;">		<SPAN ID="lfamilyname"><FONT COLOR="#7F2020">My Family</FONT></SPAN>&nbsp;<SPAN ID="lfamilyinfo" STYLE="font-size:12px;"></SPAN>
 		
 		<IFRAME ID="backframe" WIDTH="1" HEIGHT="1" FRAMEBORDER="0" SCROLLING="no"></IFRAME>
 </FONT></TD>
@@ -114,7 +114,7 @@ iPVMSN	^START	mSTART	lBlake, Γ1996	pMargaret	go
 iXZLU1	^PVMSN	mPVMSN	lSchrall, Γ1997	pEric	go
 iOVHSL	^PVMSN	mPVMSN	lCreech, Σ1998	pEthan	go
 iBI4XR	^OVHSL	mOVHSL	lTang, Σ2001	pNick	qTang, Σ2001	go
-iBDVRQ	^START	mSTART	lQuan, Σ1993	pMichael	go
+iBDVRQ	^START	mSTART	lQuan, Σ1993	pMichael	gm	qQuan, Σ1993
 iG1Z4H	^START	mSTART	lLewis, Σ1995	pAdara	go
 iZOOAC	^START	mSTART	lMurase, Σ2000	pMorio	go
 iTT5MP	^ZOOAC	mZOOAC	lWu, Σ2001	pCaroline	go
@@ -152,8 +152,8 @@ iKSLXN	^RY9ET	mRY9ET	lJae-Youn Shin, ΣSp2012	pJames	go
 iG6DEJ	^U667B	mU667B	lYu, ΣFa2009	pHelen	go
 iWL0YJ	^KSLXN	mKSLXN	lEisele, ΣFa2013	pDante	gm
 iW2IX7	^WL0YJ	fWL0YJ	lZheng, ΣFa2014	pStevie	gm
-iJWA48	^W2IX7	fW2IX7	lAdams, ΣSp2015	pZoe	gm
-iG4CDO	^JWA48	fJWA48	lAguilar, ΣFa2015	pAlessandra	gm	qAguilar, ΣFa2015
+iJWA48	^W2IX7	fW2IX7	lAdams, ΣSp2015	pZoe	go	qAdams, ΣSp2015
+iG4CDO	^JWA48	fJWA48	lAguilar, ΣFa2015	pAlessandra	gf	qAguilar, ΣFa2015
 iP8TFS	^W2IX7	fW2IX7	lPittman, ΣSp2016	pAllen	go
 iAPPGN	^START	mSTART	lJensen, ΓZ2005	pHeather	go
 iREL7H	^APPGN	mAPPGN	lRichards, ΣSp2008	pMatt	go
@@ -173,14 +173,14 @@ iTM61I	^U91LI	mU91LI	lUng, ΣFa2012	pJosephine	go
 iHORJ4	^TM61I	mTM61I	lLay, ΣSp2013	pTiffany	go
 iAUYJU	^HORJ4	mHORJ4	lShen, ΣFa2013	pZhoutian	go
 iPQ24X	^HORJ4	mHORJ4	lWang, ΣSp2014	pApril	go
-iGVDK0	^PQ24X	mPQ24X	lNimlos, ΣFa2015	pDanika	gm
+iGVDK0	^PQ24X	mPQ24X	lNimlos, ΣFa2015	pDanika	go	qNimlos, ΣFa2015
 iA52FR	^HORJ4	mHORJ4	lYamanaka, ΣSp2016	pReo	gm
 iUDLTX	^TM61I	mTM61I	lPan, ΣFa2013	pJay	gm
-iGKGJD	^TM61I	mTM61I	lCohen, ΣFa2013	pEvan	gm
-iZU59R	^TM61I	mTM61I	lRodas, ΣFa2014	pEsteban	gm
-iAT3W9	^UDLTX	fUDLTX	lLam, ΣFa2014	pSophia	gm
+iGKGJD	^TM61I	mTM61I	lCohen, ΣFa2013	pEvan	go	qCohen, ΣFa2013
+iZU59R	^TM61I	mTM61I	lRodas, ΣFa2014	pEsteban	go	qRodas, ΣFa2014
+iAT3W9	^UDLTX	fUDLTX	lLam, ΣFa2014	pSophia	go	qLam, ΣFa2014
 iBEOHR	^AT3W9	fAT3W9	lPatel, ΣSp2015	pSanum	gm
-iX2852	^BEOHR	fBEOHR	lTian, ΣSp2016	pXinran	gm
+iX2852	^BEOHR	fBEOHR	lTian, ΣSp2016	pXinran	gf	qTian, ΣSp2016
 iJYHET	^UDLTX	fUDLTX	lChang, ΣSp2015	pRoger	gm
 iXU2Z8	^JYHET	fJYHET	lZhang, ΣFa2015	pJordan	gm
 iTF5A9	^F096I	mF096I	lTsai	pPeter	go
@@ -216,9 +216,9 @@ iYG541	^R2DZX	mR2DZX	lMao, ΣFa2011	pSunnie	go
 iUXTZN	^YG541	mYG541	lCarlisle, ΣFa2013	pJolie	go
 iFRTUS	^UXTZN	mUXTZN	lWoolf, ΣSp2014	pEmma	go
 iIGU62	^FRTUS	mFRTUS	lBotros, ΣFa2014	pSam	go
-iL17SI	^IGU62	mIGU62	lGarda, ΣSp2015	pVirginia	gm
+iL17SI	^IGU62	mIGU62	lGarda, ΣSp2015	pVirginia	gf	qGarda, ΣSp2015
 iDCX4P	^L17SI	fL17SI	lChoi, ΣFa2015	pBrian	gm
-iYYGFM	^DCX4P	fDCX4P	lXu, ΣSp2016	pLinda	gm
+iYYGFM	^DCX4P	fDCX4P	lXu, ΣSp2016	pLinda	gf	qXu, ΣSp2016
 iHYXC5	^IHJEN	mIHJEN	lMcDaniel, Σ1999	pAshley	go
 iCLCBK	^HYXC5	mHYXC5	lClark, Σ2000	pShaunna	go
 iAS4Y3	^HYXC5	mHYXC5	lHenggeler, Σ2002	pTimothy	go
@@ -324,23 +324,23 @@ iE074N	^XAOQ3	mXAOQ3	lCondon, ΣFa2012	pSam	go
 iJ45UD	^XAOQ3	mXAOQ3	lKim, ΣSp2013	pRuth	go
 iWZ1EI	^J45UD	mJ45UD	lMelville, ΣFa2013	pJonathan	go
 iBSIIX	^J45UD	mJ45UD	lXu, ΣFa2013	pJiansong	go
-iHUE1V	^XAOQ3	mXAOQ3	lMorla, ΣFa2013	pMaureen	gm
-iL4VV1	^HUE1V	fHUE1V	lMudica, ΣFa2014	pEleanor	gm
+iHUE1V	^XAOQ3	mXAOQ3	lMorla, ΣFa2013	pMaureen	gf	qMorla, ΣFa2013
+iL4VV1	^HUE1V	fHUE1V	lMudica, ΣFa2014	pEleanor	gf	qMudica, ΣFa2014
 iW3VNA	^HUE1V	fHUE1V	lFong, ΣSp2015	pKevin	gm
 iVPOZL	^L4VV1	fL4VV1	lKim, ΣSp2016	pPhil	gm
-iJ37WJ	^W3VNA	fW3VNA	pAnthony	lKim, ΣSp2015	gm
-iIL7MX	^W3VNA	fW3VNA	lPreece-Scaringe, ΣSp2016	pAnnie	gm
+iJ37WJ	^W3VNA	fW3VNA	pAnthony	lKim, ΣSp2015	go	qKim, ΣSp2015
+iIL7MX	^W3VNA	fW3VNA	lPreece-Scaringe, ΣSp2016	pAnnie	gf	qPreece-Scaringe, ΣSp2016
 iL1R8J	^VFND5	mVFND5	lLue, ΣFa2013	pNicholas	gm
-iPC8XG	^L1R8J	fL1R8J	lGekko, ΣSp2014	pColby	gm
-iSQ29T	^PC8XG	fPC8XG	lJing, ΣFa2014	pAlex	gm
-iDY9HR	^SQ29T	fSQ29T	lChan, ΣSp2015	pMason	gm
-iFV7MV	^PC8XG	fPC8XG	lXia, ΣSp2015	pCarrol	gm
-iI03AZ	^L1R8J	fL1R8J	lChiu, ΣFa2014	pChris	gm
-iPQBW4	^I03AZ	fI03AZ	lHarnetiaux, ΣSp2015	pKaterina	gm
+iPC8XG	^L1R8J	fL1R8J	lGekko, ΣSp2014	pColby	gf	qGekko, ΣSp2014
+iSQ29T	^PC8XG	fPC8XG	lJing, ΣFa2014	pAlex	go	qJing, ΣFa2014
+iDY9HR	^SQ29T	fSQ29T	lChan, ΣSp2015	pMason	go	qChan, ΣSp2015
+iFV7MV	^PC8XG	fPC8XG	lXia, ΣSp2015	pCarrol	go	qXia, ΣSp2015
+iI03AZ	^L1R8J	fL1R8J	lChiu, ΣFa2014	pChris	go	qChiu, ΣFa2014
+iPQBW4	^I03AZ	fI03AZ	lHarnetiaux, ΣSp2015	pKaterina	gf	qHarnetiaux, ΣSp2015
 iPLRXS	^I03AZ	fI03AZ	lLiu, ΣFa2015	pAlan	gm
-iEUS3O	^L1R8J	fL1R8J	lZhu, ΣSp2015	pJiawei	gm
-iKEZD1	^L1R8J	fL1R8J	lTravis, ΣSp2016	pClair	gm
-iROR3R	^EUS3O	fEUS3O	lSeghal, ΣFa2015	pSanya	gm
+iEUS3O	^L1R8J	fL1R8J	lZhu, ΣSp2015	pJiawei	go	qZhu, ΣSp2015
+iKEZD1	^L1R8J	fL1R8J	lTravis, ΣSp2016	pClair	go	qTravis, ΣSp2016
+iROR3R	^EUS3O	fEUS3O	lSeghal, ΣFa2015	pSanya	gf	qSeghal, ΣFa2015
 iVXW3X	^G5T2H	mG5T2H	lSong, Σ2007	pShirley	go
 iJ53ZX	^G5T2H	mG5T2H	lMcClean, ΣSp2008	pJarrod	go
 iE39WG	^G5T2H	mG5T2H	lNguyen, ΣFa2008	pMargaret	go
@@ -354,9 +354,9 @@ iTTRNU	^WAA0N	mWAA0N	lWinter, ΣFa2012	pWes	go
 iF6Y2Z	^TTRNU	mTTRNU	lGrant, ΣSp2013	pLauren	go
 iR90PI	^TTRNU	mTTRNU	lUmpriani, ΣFa2013	pDimitri	go
 iCRIPN	^TTRNU	mTTRNU	lChen, ΣFa2014	pEllison	go
-iED2LG	^CRIPN	mCRIPN	lLee, ΣFa2015	pPearl	gm
-iSGVPZ	^ED2LG	fED2LG	lRobinson, ΣSp2016	pStephanie	gm
-iNDB6U	^J45UD	mJ45UD	lScheuermann, ΣFa2014	pAngelique	gm
+iED2LG	^CRIPN	mCRIPN	lLee, ΣFa2015	pPearl	gf	qLee, ΣFa2015
+iSGVPZ	^ED2LG	fED2LG	lRobinson, ΣSp2016	pStephanie	gf	qRobinson, ΣSp2016
+iNDB6U	^J45UD	mJ45UD	lScheuermann, ΣFa2014	pAngelique	go	qScheuermann, ΣFa2014
 iFX07I	^BSIIX	mBSIIX	lWard, ΣSp2014	qXu, ΣFa2013	pRoss	go
 iQPMM8	^J53ZX	mJ53ZX	lZhu,  ΣFa2008	pJieling	go
 iH700O	^QPMM8	mQPMM8	lGarwin, ΣFa2009	pSeth	go
@@ -369,10 +369,10 @@ iR1B58	^BOYVH	mBOYVH	lZhao, ΣSp2014	pRunyu	go
 iI9PSH	^BOYVH	mBOYVH	lZhao, ΣFa2014	pNanxia	go
 iEEQ3F	^U0JEG	mU0JEG	lLi, ΣFa2013	pJesse	go
 iF5PIE	^U0JEG	mU0JEG	lSingh, ΣFa2013	pAmandeep	go
-iTEBL4	^F5PIE	mF5PIE	lAlhomoud, ΣSp2014	pNayif	gm
+iTEBL4	^F5PIE	mF5PIE	lAlhomoud, ΣSp2014	pNayif	go	qAlhomoud, ΣSp2014
 iHC5ZT	^F5PIE	mF5PIE	lChatterjee, ΣFa2014	pAnyun	gm
-iI1VRM	^TEBL4	fTEBL4	lBuo, ΣFaFa2014	pSorinna	gm
-iMPU1T	^I1VRM	fI1VRM	lChen, ΣSp2015	pLvuxiao	gm
+iI1VRM	^TEBL4	fTEBL4	lBuo, ΣFaFa2014	pSorinna	go	qBuo, ΣFaFa2014
+iMPU1T	^I1VRM	fI1VRM	lChen, ΣSp2015	pLvuxiao	go	qChen, ΣSp2015
 iXEQSY	^HC5ZT	fHC5ZT	lManoharan, ΣSp2015	pEshwar	gm
 iJKMT9	^QCAVP	mQCAVP	lLee, ΣSp2010	pKihong	go
 iSWXVK	^JKMT9	mJKMT9	lWood, ΣFa2010	pCameron	go	qWood,ΣFa2010
@@ -386,53 +386,53 @@ iL7YIL	^J1QLH	mJ1QLH	lBae, ΣSp2013	pYounjue	go
 iRWE7Y	^J1QLH	mJ1QLH	lHu, ΣFa2013	pWennie	go
 iT2UI6	^T5TYK	mT5TYK	lJiao, ΣSp2013	pJune	go
 iQ6HVY	^T2UI6	mT2UI6	lDien, ΣFa2013	pVivian	go
-iXPPL7	^T5TYK	mT5TYK	lBansal, ΣFa2013	pShivya	gm
-iJTV6F	^T2UI6	mT2UI6	lJung, ΣSp2014	pJaehee	gm
-iO0FA2	^XPPL7	fXPPL7	lIglesias, ΣSp2014	pRicco	gm
-iNMW09	^T5TYK	mT5TYK	lCahill, ΣFa2013	pBen	gm
-iL5XOW	^NMW09	fNMW09	lAchacoso, ΣSp2014	pAnthony	gm
-iARR50	^T5TYK	mT5TYK	lStrong, ΣFa2014	pLaura	gm
+iXPPL7	^T5TYK	mT5TYK	lBansal, ΣFa2013	pShivya	go	qBansal, ΣFa2013
+iJTV6F	^T2UI6	mT2UI6	lJung, ΣSp2014	pJaehee	go	qJung, ΣSp2014
+iO0FA2	^XPPL7	fXPPL7	lIglesias, ΣSp2014	pRicco	go	qIglesias, ΣSp2014
+iNMW09	^T5TYK	mT5TYK	lCahill, ΣFa2013	pBen	go	qCahill, ΣFa2013
+iL5XOW	^NMW09	fNMW09	lAchacoso, ΣSp2014	pAnthony	go	qAchacoso, ΣSp2014
+iARR50	^T5TYK	mT5TYK	lStrong, ΣFa2014	pLaura	gf	qStrong, ΣFa2014
 iM2ERI	^ARR50	fARR50	lGibbert, ΣSp2015	pCharlene	go
-iA99XW	^M2ERI	mM2ERI	lLee, ΣFa2015	pAngela	gm
-iZYQ2Z	^A99XW	fA99XW	lYang, ΣSp2016	pYolanda	gm
+iA99XW	^M2ERI	mM2ERI	lLee, ΣFa2015	pAngela	gf	qLee, ΣFa2015
+iZYQ2Z	^A99XW	fA99XW	lYang, ΣSp2016	pYolanda	gf	qYang, ΣSp2016
 iLXH00	^ARR50	fARR50	lBernbeck, ΣFa2015	pMax	gm
-iJKYYF	^ARR50	fARR50	lWallace, ΣSp2016	pShelby	gm
+iJKYYF	^ARR50	fARR50	lWallace, ΣSp2016	pShelby	gf	qWallace, ΣSp2016
 iHPTWD	^UQ3LV	mUQ3LV	lCerda, ΣSp2013	pMartha	go
 iUEWVP	^UQ3LV	mUQ3LV	lWang, ΣFa2014	pJustin	gm
 iF4AMO	^UQ3LV	mUQ3LV	lKormos, ΣSp2015	pRian	gm
 iBXXWH	^F4AMO	fF4AMO	lLiang, ΣSp2016	pJiatao	gm
-iH271U	^UEWVP	fUEWVP	lTao, ΣSp2015	pYujia	gm
-iJMQ95	^H271U	fH271U	lChang, ΣFa2015	pMatthew	gm
+iH271U	^UEWVP	fUEWVP	lTao, ΣSp2015	pYujia	go	qTao, ΣSp2015
+iJMQ95	^H271U	fH271U	lChang, ΣFa2015	pMatthew	gm	qChang, ΣFa2015
 iEA33D	^UEWVP	fUEWVP	lPoon, ΣSp2016	pRaymond	gm
 iBLJ9M	^HPTWD	mHPTWD	lLy, ΣFa2013	pPhil	go	qLy, ΣFa2013
-iQ5PY7	^BLJ9M	fBLJ9M	lWu, ΣSp2014	pTommy	gm
-iGOQMA	^BLJ9M	mBLJ9M	lKim, ΣFa2014	pBrandom	gm
+iQ5PY7	^BLJ9M	fBLJ9M	lWu, ΣSp2014	pTommy	go	qWu, ΣSp2014
+iGOQMA	^BLJ9M	mBLJ9M	lKim, ΣFa2014	pBrandom	go	qKim, ΣFa2014
 iU7YB6	^Q5PY7	fQ5PY7	lYang, ΣFa2014	pElvin	gm
-iK69F4	^GOQMA	fGOQMA	lMartinez, ΣSp2015	pAnthony	gm
-iGCLRT	^U7YB6	fU7YB6	lKo, ΣSp2015	pKevin	gm
-iSZQML	^U7YB6	fU7YB6	lLeskova, ΣFa2015	pAnna	gm
+iK69F4	^GOQMA	fGOQMA	lMartinez, ΣSp2015	pAnthony	go	qMartinez, ΣSp2015
+iGCLRT	^U7YB6	fU7YB6	lKo, ΣSp2015	pKevin	go	qKo, ΣSp2015
+iSZQML	^U7YB6	fU7YB6	lLeskova, ΣFa2015	pAnna	go	qLeskova, ΣFa2015
 iM12WH	^GCLRT	fGCLRT	lYang, ΣFa2015	pAndrew	gm
-iDD5TD	^SZQML	fSZQML	lPrice, ΣSp2016	pRiley	gm
-iW8T43	^M12WH	fM12WH	lHe, ΣSp2016	pManni	gm
+iDD5TD	^SZQML	fSZQML	lPrice, ΣSp2016	pRiley	go	qPrice, ΣSp2016
+iW8T43	^M12WH	fM12WH	lHe, ΣSp2016	pManni	gf	qHe, ΣSp2016
 iVWEIN	^MTARN	mMTARN	lDockstader, ΣSp2011	pErika	go
 iVXFUJ	^VWEIN	mVWEIN	lWang, ΣFa2011	pKevin	go	qWang, ΣFa2011
 iNWEF7	^VWEIN	mVWEIN	lUribe, ΣSp2013	pEric	go
 iLLRYV	^VXFUJ	mVXFUJ	lAdre, ΣFa2012	pErika	go
 iGMZ2H	^LLRYV	mLLRYV	lSit, ΣFa2013	pIzaac	go
-iONNLS	^GMZ2H	mGMZ2H	lBanderas, ΣFa2014	pAlfonso	gm
+iONNLS	^GMZ2H	mGMZ2H	lBanderas, ΣFa2014	pAlfonso	go	qBanderas, ΣFa2014
 iP8WX1	^ONNLS	fONNLS	lShieh, ΣSp2015	pNeil	gm
 iOSQAN	^ONNLS	fONNLS	lPark, ΣFa2015	pSean	gm
-iPIBYP	^P8WX1	fP8WX1	lJung, ΣFa2015	pKatherine	gm
-iY3ADK	^NWEF7	mNWEF7	lYao, ΣSp2014	pEmily	gm
-iH7320	^NWEF7	mNWEF7	lGandhi, ΣFa2014	pShivaani	gm
-iOGG10	^H7320	fH7320	lTran, ΣFa2015	pLivia	gm
-iFBILY	^H7320	fH7320	lHendrickson, ΣSp2016	pDrew	gm
-iR9UZH	^Y3ADK	fY3ADK	lGiang, ΣFa2014	pBrian	gm
-iREP25	^Y3ADK	fY3ADK	lTucker, ΣSp2015	pMax	gm
-iZ2WSU	^Y3ADK	fY3ADK	lOu, ΣSp2016	pLisha	gm
+iPIBYP	^P8WX1	fP8WX1	lJung, ΣFa2015	pKatherine	gf	qJung, ΣFa2015
+iY3ADK	^NWEF7	mNWEF7	lYao, ΣSp2014	pEmily	gf	qYao, ΣSp2014
+iH7320	^NWEF7	mNWEF7	lGandhi, ΣFa2014	pShivaani	gf	qGandhi, ΣFa2014
+iOGG10	^H7320	fH7320	lTran, ΣFa2015	pLivia	go	qTran, ΣFa2015
+iFBILY	^H7320	fH7320	lHendrickson, ΣSp2016	pDrew	gm	qHendrickson, ΣSp2016
+iR9UZH	^Y3ADK	fY3ADK	lGiang, ΣFa2014	pBrian	go	qGiang, ΣFa2014
+iREP25	^Y3ADK	fY3ADK	lTucker, ΣSp2015	pMax	go	qTucker, ΣSp2015
+iZ2WSU	^Y3ADK	fY3ADK	lOu, ΣSp2016	pLisha	gf	qOu, ΣSp2016
 iNOAAJ	^R9UZH	fR9UZH	lPatel, ΣSp2015	pSajan	gm
-iC1ZFW	^R9UZH	fR9UZH	lLim, ΣFa2015	pDarren	gm
-iW6H40	^NOAAJ	fNOAAJ	lNatesan, ΣFa2015	pDivya	gm
+iC1ZFW	^R9UZH	fR9UZH	lLim, ΣFa2015	pDaren	gm
+iW6H40	^NOAAJ	fNOAAJ	lNatesan, ΣFa2015	pDivya	gf	qNatesan, ΣFa2015
 iXO2NG	^REP25	fREP25	lPark, ΣFa2015	pWon	gm
 iS4APZ	^XO2NG	fXO2NG	lRiasanovsky, ΣSp2016	pNick	gm
 iQ9UG4	^S653R	mS653R	lWoo, Σ1992	pHoward	go
@@ -492,10 +492,35 @@ iC6MF1	^HZPKU	mHZPKU	lMorales, ΣFa2010	pAnn	go
 iR8F3D	^C6MF1	mC6MF1	lPokrzywa, ΣFa2012	pJosephine	go
 iGSA3D	^R8F3D	mR8F3D	lPark, ΣSp2013	pYirang	go
 iQHRVY	^GSA3D	mGSA3D	lZhou, ΣFa2013	pGiulio	go
-iQR62B	^QHRVY	mQHRVY	lAl-mubarak, ΣFa2014	pBader	gm
+iQR62B	^QHRVY	mQHRVY	lAl-mubarak, ΣFa2014	pBader	go	qAl-mubarak, ΣFa2014
 iGZFE5	^GSA3D	mGSA3D	lMoore, ΣFa2014	pGreg	go
-iDFWYE	^GZFE5	mGZFE5	lSharma, ΣSp2015	pSumesh	gm
-iJUUZ4	^DFWYE	fDFWYE	lWiggenhorn, ΣFa2015	pAmanda	gm
+iDFWYE	^GZFE5	mGZFE5	lSharma, ΣSp2015	pSumesh	go	qSharma, ΣSp2015
+iJUUZ4	^DFWYE	fDFWYE	lWiggenhorn, ΣFa2015	pAmanda	gf	qWiggenhorn, ΣFa2015
+iOYKJ9	^Y3ADK	fY3ADK	lLee, ΣFa2016	pMichael	gm
+iKUQZE	^Z2WSU	fZ2WSU	lNg, ΣFa2016	pSamuel	gm
+iGHI6N	^C1ZFW	fC1ZFW	lThangaratnam, ΣFa2016	pShehan	gm
+iD4DL0	^W6H40	fW6H40	lSahai, ΣFa2016	pTanushi	gf	qSahai, ΣFa2016
+iJ7K5M	^PIBYP	fPIBYP	lShin, ΣFa2016	pJohn	z0	gm
+iEP7GJ	^OSQAN	fOSQAN	lHan, ΣFa2016	pBen	gm	z0
+iNQFP3	^JYHET	fJYHET	lLiu, ΣFa2016	pAmy	gf	z0	qLiu, ΣFa2016
+iHYL0C	^UDLTX	fUDLTX	lAllegakoen, ΣFa2016	pHannah	gf	qAllegakoen, ΣFa2016
+iU1ZSF	^A52FR	fA52FR	lLuong, ΣFa2016	pTina	gf	qLuong, ΣFa2016
+iDMV0I	^XU2Z8	fXU2Z8	lWu, ΣFa2016	pYian	gf	qWu, ΣFa2016
+iG4RY7	^X2852	fX2852	lKim, ΣFa2016	pTaehun	gm
+iCTMP3	^DCX4P	fDCX4P	lAwan, ΣFa2016	pAmanda	gf	qAwan, ΣFa2016
+iLO3S5	^LXH00	fLXH00	lCativiela, ΣFa2016	pPaul	gm
+iHBK8X	^JKYYF	fJKYYF	lKleinman, ΣFa2016	pJordan	gf	qKleinman, ΣFa2016
+iEHQA9	^A99XW	fA99XW	lDePaola IV, ΣFa2016	pPeter	gm
+iI8BFE	^F4AMO	fF4AMO	lZhoufan-Li, ΣFa2016	pFrancesca	gf	qZhoufan-Li, ΣFa2016
+iOR4LA	^BXXWH	fBXXWH	lHu, ΣFa2016	pRian	gm
+iMA7GE	^UEWVP	fUEWVP	lChen, ΣFa2016	pShirley	gf	qChen, ΣFa2016
+iGBVY8	^HC5ZT	fHC5ZT	lPatel, ΣFa2016	pAayush	gm
+iQ4GPX	^ED2LG	fED2LG	lDemeulenaere, ΣFa2016	pSasha	gf	qDemeulenaere, ΣFa2016
+iK2Q4D	^SGVPZ	fSGVPZ	lMarinkovich, ΣFa2016	pSasha	qMarinkovich, ΣFa2016	gf
+iM7Y3M	^ROR3R	fROR3R	lTrinh, ΣFa2016	pFelicia	gf	qTrinh, ΣFa2016
+iH9AHC	^M12WH	fM12WH	lKang, ΣFa2016	pJing Wei	gm
+iRXI6J	^HUE1V	fHUE1V	lNarayan, ΣFa2016	pSuchi	gf	qNarayan, ΣFa2016
+iSN2YU	^W2IX7	fW2IX7	lSalazar, ΣFa2016	pAnthony	gm
 
 # ...end of FamilyScript
 
@@ -508,8 +533,7 @@ iJUUZ4	^DFWYE	fDFWYE	lWiggenhorn, ΣFa2015	pAmanda	gm
 		
 
 		<INPUT TYPE="hidden" ID="founderid" VALUE="START">
-		<B><A HREF="index.html"> Click here to go back to the Alpha Chi Sigma | Sigma Chapter Home Page</A>
-		</B>			
+		<B>Standalone read only copy created by <A HREF="http://www.familyecho.com/" TITLE="Family Echo - Free Online Family Tree Maker"><IMG SRC="logo-80x16.gif" WIDTH="80" HEIGHT="16" BORDER="0" ALT="Family Echo" ALIGN="ABSBOTTOM"></A></B>			
 							</TD>
 						</TR></TABLE>
 					</TD>
@@ -537,9 +561,9 @@ iJUUZ4	^DFWYE	fDFWYE	lWiggenhorn, ΣFa2015	pAmanda	gm
 			
 			<DIV CLASS="fullsize" STYLE="position:relative;">
 
-				<DIV ID="treediv" CLASS="dright" STYLE="top:0px; height:100%; overflow:hidden;"><DIV ID="treemargin" CLASS="marginon"><IFRAME NAME="treeframe" ID="treeframe" SRC="tree.htm?160320" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="no"></IFRAME></DIV></DIV>
+				<DIV ID="treediv" CLASS="dright" STYLE="top:0px; height:100%; overflow:hidden;"><DIV ID="treemargin" CLASS="marginon"><IFRAME NAME="treeframe" ID="treeframe" SRC="tree.htm?160919" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="no"></IFRAME></DIV></DIV>
 				
-				<DIV ID="navdiv" CLASS="dright" STYLE="bottom:0px; height:64px; "><DIV ID="navmargin" CLASS="marginon"><IFRAME NAME="navframe" SRC="navigation.htm?160320" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="no"></IFRAME></DIV></DIV>
+				<DIV ID="navdiv" CLASS="dright" STYLE="bottom:0px; height:64px; "><DIV ID="navmargin" CLASS="marginon"><IFRAME NAME="navframe" SRC="navigation.htm?160919" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="no"></IFRAME></DIV></DIV>
 				
 				<DIV ID="keydiv" CLASS="dright rbody" STYLE="bottom:64px; display:none; border-top:solid #666666 1px; padding:24px 0px 32px 0px; text-align:center;"><DIV ID="keymargin" CLASS="marginon"><DIV STYLE="font-size:14px; font-weight:bold; margin-bottom:24px;">Key to family tree diagram:</DIV><DIV STYLE="position:relative; margin:0 auto;" ID="keycontent"></DIV></DIV></DIV>
 
@@ -549,7 +573,7 @@ iJUUZ4	^DFWYE	fDFWYE	lWiggenhorn, ΣFa2015	pAmanda	gm
 
 				</CENTER></DIV></DIV>
 				
-				<DIV ID="leftdiv" CLASS="dleft" STYLE=""><IFRAME NAME="sideframe" SRC="sidebar.htm?160320" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="auto"></IFRAME></DIV>
+				<DIV ID="leftdiv" CLASS="dleft" STYLE=""><IFRAME NAME="sideframe" SRC="sidebar.htm?160919" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="auto"></IFRAME></DIV>
 
 				<DIV ID="extradiv" CLASS="dleft lbody" STYLE="visibility:hidden;"><IFRAME ID="extraframe" CLASS="fullsize" FRAMEBORDER="0" SCROLLING="auto"></IFRAME></DIV>
 				
@@ -560,7 +584,7 @@ iJUUZ4	^DFWYE	fDFWYE	lWiggenhorn, ΣFa2015	pAmanda	gm
 			<TR HEIGHT="8">
 				<TD STYLE="border-top:solid #666666 1px; padding:8px;" VALIGN="middle">
 					<DIV STYLE="float:left;">
-Dynamic HTML downloaded by Alpha Chi Sigma Webmaster on 30 May 2016.					</DIV>
+Dynamic HTML downloaded by Alpha Chi Sigma Webmaster on 10 Nov 2016.					</DIV>
 					<DIV STYLE="float:right;">
 <A HREF="http://www.familyecho.com/" TITLE="Family Echo - Free Online Family Tree Maker">Family Echo</A> &copy; Familiality 2016 - All rights reserved					</DIV>
 				</TD>
